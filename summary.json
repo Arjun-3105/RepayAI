@@ -170,6 +170,6 @@
       "27": 0.0,
       "28": 0.0
     },
-    "explanation": "Classified as RECOVER: customer has 13/14 successful cycles historically (success rate 93%), clustering on days [1, 2, 3, 4, 5]. Current failure (code Z9) occurred outside that window. Retry scheduled for customer's known success window rather than immediately \u2014 aligning to observed salary-credit patterns for \u20b93,634.66."
+    "explanation": "The failed payment event has been classified as recoverable. The customer has a successful payment history of 13 out of 14 cycles, indicating a high success rate of 93%. The failure was due to insufficient funds on the specific date, as indicated by the failure code Z9. Given the customer's historical success window of the first 5 days of the month, the system has been instructed to schedule a retry aligned with this window, rather than attempting an immediate retry. This approach aims to maximize the chances of successful recovery while respecting the customer's payment patterns."
   }
 }

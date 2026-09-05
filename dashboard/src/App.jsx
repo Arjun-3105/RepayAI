@@ -10,6 +10,7 @@ import EvilConfusionMatrix from './components/EvilConfusionMatrix';
 import EvilRevenueFunnel from './components/EvilRevenueFunnel';
 import LiveSimulatorModal from './components/LiveSimulatorModal';
 import AuditLogExplorer from './components/AuditLogExplorer';
+import RefundGuardExplorer from './components/RefundGuardExplorer';
 
 const FALLBACK = {
   meta: { total_events: 300, total_amount_inr: 960892.04 },
@@ -41,10 +42,11 @@ const FALLBACK = {
 };
 
 const NAV = [
-  { id: 'overview', icon: Activity,  label: 'Executive Dashboard' },
-  { id: 'kde',      icon: Sparkles,  label: 'Smart Retry Planner' },
-  { id: 'matrix',   icon: Layers,    label: 'AI Decision Matrix' },
-  { id: 'audit',    icon: BarChart2, label: 'Audit Stream' },
+  { id: 'overview', icon: Activity,    label: 'Executive Dashboard' },
+  { id: 'kde',      icon: Sparkles,    label: 'Smart Retry Planner' },
+  { id: 'matrix',   icon: Layers,      label: 'AI Decision Matrix' },
+  { id: 'audit',    icon: BarChart2,   label: 'Audit Stream' },
+  { id: 'refund',   icon: ShieldCheck, label: 'Refund AI Verification' },
 ];
 
 export default function App() {
@@ -213,6 +215,10 @@ export default function App() {
 
           {activeTab === 'audit' && (
             <AuditLogExplorer auditLog={auditLog} activeBranchFilter={branchFilter} onSelectEvent={setSelectedEvent} />
+          )}
+
+          {activeTab === 'refund' && (
+            <RefundGuardExplorer />
           )}
         </div>
       </main>

@@ -217,9 +217,10 @@ def generate_explanation(
 
     # Try OpenRouter first
     if openrouter_key and openrouter_key != "your_openrouter_api_key_here":
-        result = _call_openrouter(event, branch, rule_rationale, openrouter_key)
+        model_name = os.getenv("OPENROUTER_MODEL", "inclusionai/ling-3.0-flash-fin:free")
+        result = _call_openrouter(event, branch, rule_rationale, openrouter_key, model=model_name)
         if result:
-            return {"explanation": result, "explanation_source": "openrouter/claude-3-haiku"}
+            return {"explanation": result, "explanation_source": f"openrouter:{model_name}"}
 
     # Try Gemini fallback
     if gemini_key and gemini_key != "your_gemini_api_key_here":

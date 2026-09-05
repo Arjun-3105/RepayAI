@@ -1,10 +1,10 @@
 {
   "source": "razorpay_live_test",
-  "fetched_at": "2026-09-04T01:46:09.340633+05:30",
+  "fetched_at": "2026-09-05T23:07:42.930795+05:30",
   "key_id_prefix": "rzp_test_TXf...",
   "mode": "test",
   "live_counts": {
-    "orders": 1,
+    "orders": 29,
     "customers": 15,
     "payments": 0,
     "refunds": 0
@@ -22,157 +22,727 @@
   },
   "enriched_orders": [
     {
-      "razorpay_order_id": "order_TXgzvvdCx8bL4b",
+      "razorpay_order_id": "order_TYRMh3ypRCAofg",
       "customer_name": "Kiran Sharma",
       "plan": "SIP Monthly",
       "amount_inr": 999,
       "status": "paid",
       "has_refund_request": false,
       "is_live": true,
-      "created_at": 1788466559
+      "created_at": 1788629846
     },
     {
-      "razorpay_order_id": "ord_simulated_0001",
+      "razorpay_order_id": "order_TYRMhlEPM9V44Y",
       "customer_name": "Rohan Mehta",
       "plan": "OTT Bundle",
       "amount_inr": 2499,
       "status": "failed",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1788380169
+      "is_live": true,
+      "created_at": 1788629846
     },
     {
-      "razorpay_order_id": "ord_simulated_0002",
+      "razorpay_order_id": "order_TYRMiRxkJ4zJWq",
       "customer_name": "Priya Nair",
       "plan": "Gym Annual",
       "amount_inr": 1499,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1788293769
+      "is_live": true,
+      "created_at": 1788629847
     },
     {
-      "razorpay_order_id": "ord_simulated_0003",
+      "razorpay_order_id": "order_TYRMjArI28WRpQ",
       "customer_name": "Arjun Kapoor",
       "plan": "EdTech Pro",
       "amount_inr": 4999,
       "status": "failed",
       "has_refund_request": true,
-      "is_live": false,
-      "created_at": 1788207369
+      "is_live": true,
+      "created_at": 1788629848
     },
     {
-      "razorpay_order_id": "ord_simulated_0004",
+      "razorpay_order_id": "order_TYRMjpGs5Kszbg",
       "customer_name": "Sneha Iyer",
       "plan": "News Premium",
       "amount_inr": 799,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1788120969
+      "is_live": true,
+      "created_at": 1788629848
     },
     {
-      "razorpay_order_id": "ord_simulated_0005",
+      "razorpay_order_id": "order_TXgzzOjyAkwhtE",
       "customer_name": "Vikram Singh",
       "plan": "Cloud Backup",
       "amount_inr": 3499,
       "status": "failed",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1788034569
+      "is_live": true,
+      "created_at": 1788466562
     },
     {
-      "razorpay_order_id": "ord_simulated_0006",
+      "razorpay_order_id": "order_TXh002SlSb625U",
       "customer_name": "Anjali Sharma",
       "plan": "Fitness Tracker",
       "amount_inr": 1299,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787948169
+      "is_live": true,
+      "created_at": 1788466562
     },
     {
-      "razorpay_order_id": "ord_simulated_0007",
+      "razorpay_order_id": "order_TXh00g8XJwqGGj",
       "customer_name": "Rahul Gupta",
       "plan": "Insurance EMI",
       "amount_inr": 5999,
       "status": "failed",
       "has_refund_request": true,
-      "is_live": false,
-      "created_at": 1787861769
+      "is_live": true,
+      "created_at": 1788466563
     },
     {
-      "razorpay_order_id": "ord_simulated_0008",
+      "razorpay_order_id": "order_TXh01M7lPJQMDd",
       "customer_name": "Meera Pillai",
       "plan": "Magazine Bundle",
       "amount_inr": 699,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787775369
+      "is_live": true,
+      "created_at": 1788466564
     },
     {
-      "razorpay_order_id": "ord_simulated_0009",
+      "razorpay_order_id": "order_TXh023DA8i8CTA",
       "customer_name": "Suresh Babu",
       "plan": "Loan EMI",
       "amount_inr": 8999,
       "status": "failed",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787688969
+      "is_live": true,
+      "created_at": 1788466564
     },
     {
-      "razorpay_order_id": "ord_simulated_0010",
+      "razorpay_order_id": "order_TXh02nHmf0Lrsy",
       "customer_name": "Divya Krishnan",
       "plan": "Electricity AutoPay",
       "amount_inr": 2999,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787602569
+      "is_live": true,
+      "created_at": 1788466565
     },
     {
-      "razorpay_order_id": "ord_simulated_0011",
+      "razorpay_order_id": "order_TXh03QBR0503vv",
       "customer_name": "Amit Joshi",
       "plan": "Credit Card EMI",
       "amount_inr": 1999,
       "status": "failed",
       "has_refund_request": true,
-      "is_live": false,
-      "created_at": 1787516169
+      "is_live": true,
+      "created_at": 1788466565
     },
     {
-      "razorpay_order_id": "ord_simulated_0012",
+      "razorpay_order_id": "order_TXh042LT4CUahu",
       "customer_name": "Pooja Menon",
       "plan": "Home Loan EMI",
       "amount_inr": 14999,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787429769
+      "is_live": true,
+      "created_at": 1788466566
     },
     {
-      "razorpay_order_id": "ord_simulated_0013",
+      "razorpay_order_id": "order_TXh04fpK3fnPGd",
       "customer_name": "Rajesh Patel",
       "plan": "App Subscription",
       "amount_inr": 399,
       "status": "failed",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787343369
+      "is_live": true,
+      "created_at": 1788466567
     },
     {
-      "razorpay_order_id": "ord_simulated_0014",
+      "razorpay_order_id": "order_TXh05KlEoN6Ivd",
       "customer_name": "Sita Reddy",
       "plan": "MF SIP",
       "amount_inr": 4999,
       "status": "paid",
       "has_refund_request": false,
-      "is_live": false,
-      "created_at": 1787256969
+      "is_live": true,
+      "created_at": 1788466567
     }
   ],
   "live_orders": [
+    {
+      "id": "order_TYRMjpGs5Kszbg",
+      "entity": "order",
+      "amount": 79900,
+      "amount_paid": null,
+      "amount_due": 79900,
+      "currency": "INR",
+      "receipt": "rcpt_812345",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Sneha Iyer",
+        "plan": "News Premium",
+        "customer_id": "",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788629848
+    },
+    {
+      "id": "order_TYRMjArI28WRpQ",
+      "entity": "order",
+      "amount": 499900,
+      "amount_paid": null,
+      "amount_due": 499900,
+      "currency": "INR",
+      "receipt": "rcpt_781234",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Arjun Kapoor",
+        "plan": "EdTech Pro",
+        "customer_id": "",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788629848
+    },
+    {
+      "id": "order_TYRMiRxkJ4zJWq",
+      "entity": "order",
+      "amount": 149900,
+      "amount_paid": null,
+      "amount_due": 149900,
+      "currency": "INR",
+      "receipt": "rcpt_678123",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Priya Nair",
+        "plan": "Gym Annual",
+        "customer_id": "",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788629847
+    },
+    {
+      "id": "order_TYRMhlEPM9V44Y",
+      "entity": "order",
+      "amount": 249900,
+      "amount_paid": null,
+      "amount_due": 249900,
+      "currency": "INR",
+      "receipt": "rcpt_567812",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Rohan Mehta",
+        "plan": "OTT Bundle",
+        "customer_id": "",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788629846
+    },
+    {
+      "id": "order_TYRMh3ypRCAofg",
+      "entity": "order",
+      "amount": 99900,
+      "amount_paid": null,
+      "amount_due": 99900,
+      "currency": "INR",
+      "receipt": "rcpt_456781",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Kiran Sharma",
+        "plan": "SIP Monthly",
+        "customer_id": "",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788629846
+    },
+    {
+      "id": "order_TYQ66XTRorvb37",
+      "entity": "order",
+      "amount": 19900,
+      "amount_paid": null,
+      "amount_due": 19900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_008",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "multi-window salary \u2192 RECOVER best day",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh01Cq39UZWeo",
+        "customer_name": "Meera Pillai",
+        "failure_code": "Z9",
+        "mandate_category": "OTT/streaming",
+        "consecutive_fails": "1",
+        "mandate_plan": "News Premium"
+      },
+      "created_at": 1788625382
+    },
+    {
+      "id": "order_TYQ65wch1C9AzR",
+      "entity": "order",
+      "amount": 149900,
+      "amount_paid": null,
+      "amount_due": 149900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_007",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "account closed \u2192 STOP immediately",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh00WGnFn6tfi",
+        "customer_name": "Rahul Gupta",
+        "failure_code": "01",
+        "mandate_category": "Fitness",
+        "consecutive_fails": "0",
+        "mandate_plan": "Gym Membership"
+      },
+      "created_at": 1788625381
+    },
+    {
+      "id": "order_TYQ65M6LlZ2CLn",
+      "entity": "order",
+      "amount": 34900,
+      "amount_paid": null,
+      "amount_due": 34900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_006",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "customer revoked \u2192 REAUTHORIZE",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh01uYfXSjhMi",
+        "customer_name": "Suresh Babu",
+        "failure_code": "06",
+        "mandate_category": "Utility/subscription",
+        "consecutive_fails": "0",
+        "mandate_plan": "Cloud Backup"
+      },
+      "created_at": 1788625381
+    },
+    {
+      "id": "order_TYQ64gUczTvULB",
+      "entity": "order",
+      "amount": 249900,
+      "amount_paid": null,
+      "amount_due": 249900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_005",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "3x consecutive Z9 \u2192 STOP",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh03Hw6KHXWgT",
+        "customer_name": "Amit Joshi",
+        "failure_code": "Z9",
+        "mandate_category": "EdTech",
+        "consecutive_fails": "3",
+        "mandate_plan": "EdTech Pro"
+      },
+      "created_at": 1788625380
+    },
+    {
+      "id": "order_TYQ645YaKDS29A",
+      "entity": "order",
+      "amount": 79900,
+      "amount_paid": null,
+      "amount_due": 79900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_004",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "bank-down \u2192 WAIT 4hr",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh02dZIxQG3WI",
+        "customer_name": "Divya Krishnan",
+        "failure_code": "U28",
+        "mandate_category": "Insurance",
+        "consecutive_fails": "0",
+        "mandate_plan": "Insurance"
+      },
+      "created_at": 1788625379
+    },
+    {
+      "id": "order_TYQ63VsQVe43zs",
+      "entity": "order",
+      "amount": 24900,
+      "amount_paid": null,
+      "amount_due": 24900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_003",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "PSP outage \u2192 WAIT 30min",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh04WChzNpoCA",
+        "customer_name": "Rajesh Patel",
+        "failure_code": "U69",
+        "mandate_category": "OTT/streaming",
+        "consecutive_fails": "0",
+        "mandate_plan": "OTT Bundle"
+      },
+      "created_at": 1788625379
+    },
+    {
+      "id": "order_TYQ62uqgYEmKAZ",
+      "entity": "order",
+      "amount": 499900,
+      "amount_paid": null,
+      "amount_due": 499900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_002",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "end-of-month salary \u2192 RECOVER",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh03tJ7fVUWns",
+        "customer_name": "Pooja Menon",
+        "failure_code": "Z9",
+        "mandate_category": "Loan EMI",
+        "consecutive_fails": "1",
+        "mandate_plan": "Home Loan EMI"
+      },
+      "created_at": 1788625378
+    },
+    {
+      "id": "order_TYQ62Iix2OF8P9",
+      "entity": "order",
+      "amount": 99900,
+      "amount_paid": null,
+      "amount_due": 99900,
+      "currency": "INR",
+      "receipt": "rzp_mandate_001",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "scenario": "salary-window mismatch \u2192 RECOVER",
+        "mandate_status": "ACTIVE",
+        "source": "RecoverOS-mandateEngine",
+        "customer_id": "cust_TXh059z27q0ya8",
+        "customer_name": "Sita Reddy",
+        "failure_code": "Z9",
+        "mandate_category": "SIP/micro-investment",
+        "consecutive_fails": "1",
+        "mandate_plan": "MF SIP"
+      },
+      "created_at": 1788625378
+    },
+    {
+      "id": "order_TYQ51fRifJpCXg",
+      "entity": "order",
+      "amount": 99900,
+      "amount_paid": null,
+      "amount_due": 99900,
+      "currency": "INR",
+      "receipt": "order_rzp_test_001",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "mandate_type": "SIP",
+        "category": "SIP/micro-investment"
+      },
+      "created_at": 1788625320
+    },
+    {
+      "id": "order_TXh05KlEoN6Ivd",
+      "entity": "order",
+      "amount": 499900,
+      "amount_paid": null,
+      "amount_due": 499900,
+      "currency": "INR",
+      "receipt": "rcpt_012345",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Sita Reddy",
+        "plan": "MF SIP",
+        "customer_id": "cust_TXh059z27q0ya8",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466567
+    },
+    {
+      "id": "order_TXh04fpK3fnPGd",
+      "entity": "order",
+      "amount": 39900,
+      "amount_paid": null,
+      "amount_due": 39900,
+      "currency": "INR",
+      "receipt": "rcpt_901234",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Rajesh Patel",
+        "plan": "App Subscription",
+        "customer_id": "cust_TXh04WChzNpoCA",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466567
+    },
+    {
+      "id": "order_TXh042LT4CUahu",
+      "entity": "order",
+      "amount": 1499900,
+      "amount_paid": null,
+      "amount_due": 1499900,
+      "currency": "INR",
+      "receipt": "rcpt_890123",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Pooja Menon",
+        "plan": "Home Loan EMI",
+        "customer_id": "cust_TXh03tJ7fVUWns",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466566
+    },
+    {
+      "id": "order_TXh03QBR0503vv",
+      "entity": "order",
+      "amount": 199900,
+      "amount_paid": null,
+      "amount_due": 199900,
+      "currency": "INR",
+      "receipt": "rcpt_789012",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Amit Joshi",
+        "plan": "Credit Card EMI",
+        "customer_id": "cust_TXh03Hw6KHXWgT",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466565
+    },
+    {
+      "id": "order_TXh02nHmf0Lrsy",
+      "entity": "order",
+      "amount": 299900,
+      "amount_paid": null,
+      "amount_due": 299900,
+      "currency": "INR",
+      "receipt": "rcpt_678901",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Divya Krishnan",
+        "plan": "Electricity AutoPay",
+        "customer_id": "cust_TXh02dZIxQG3WI",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466565
+    },
+    {
+      "id": "order_TXh023DA8i8CTA",
+      "entity": "order",
+      "amount": 899900,
+      "amount_paid": null,
+      "amount_due": 899900,
+      "currency": "INR",
+      "receipt": "rcpt_567890",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Suresh Babu",
+        "plan": "Loan EMI",
+        "customer_id": "cust_TXh01uYfXSjhMi",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466564
+    },
+    {
+      "id": "order_TXh01M7lPJQMDd",
+      "entity": "order",
+      "amount": 69900,
+      "amount_paid": null,
+      "amount_due": 69900,
+      "currency": "INR",
+      "receipt": "rcpt_456789",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Meera Pillai",
+        "plan": "Magazine Bundle",
+        "customer_id": "cust_TXh01Cq39UZWeo",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466564
+    },
+    {
+      "id": "order_TXh00g8XJwqGGj",
+      "entity": "order",
+      "amount": 599900,
+      "amount_paid": null,
+      "amount_due": 599900,
+      "currency": "INR",
+      "receipt": "rcpt_345678",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Rahul Gupta",
+        "plan": "Insurance EMI",
+        "customer_id": "cust_TXh00WGnFn6tfi",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466563
+    },
+    {
+      "id": "order_TXh002SlSb625U",
+      "entity": "order",
+      "amount": 129900,
+      "amount_paid": null,
+      "amount_due": 129900,
+      "currency": "INR",
+      "receipt": "rcpt_234567",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Anjali Sharma",
+        "plan": "Fitness Tracker",
+        "customer_id": "cust_TXgzztXUlcU53h",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466562
+    },
+    {
+      "id": "order_TXgzzOjyAkwhtE",
+      "entity": "order",
+      "amount": 349900,
+      "amount_paid": null,
+      "amount_due": 349900,
+      "currency": "INR",
+      "receipt": "rcpt_123456",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Vikram Singh",
+        "plan": "Cloud Backup",
+        "customer_id": "cust_TXgzzB7zGD2JIK",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466562
+    },
+    {
+      "id": "order_TXgzygl4bMnEb0",
+      "entity": "order",
+      "amount": 79900,
+      "amount_paid": null,
+      "amount_due": 79900,
+      "currency": "INR",
+      "receipt": "rcpt_812345",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Sneha Iyer",
+        "plan": "News Premium",
+        "customer_id": "cust_TXgzyWNvgdByyN",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466561
+    },
+    {
+      "id": "order_TXgzxzdBP0mBJx",
+      "entity": "order",
+      "amount": 499900,
+      "amount_paid": null,
+      "amount_due": 499900,
+      "currency": "INR",
+      "receipt": "rcpt_781234",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Arjun Kapoor",
+        "plan": "EdTech Pro",
+        "customer_id": "cust_TXgzxqRvLMCxzI",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466560
+    },
+    {
+      "id": "order_TXgzxIv5F1uatO",
+      "entity": "order",
+      "amount": 149900,
+      "amount_paid": null,
+      "amount_due": 149900,
+      "currency": "INR",
+      "receipt": "rcpt_678123",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Priya Nair",
+        "plan": "Gym Annual",
+        "customer_id": "cust_TXgzx90WlbpI8j",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466560
+    },
+    {
+      "id": "order_TXgzwcjKHRNP5N",
+      "entity": "order",
+      "amount": 249900,
+      "amount_paid": null,
+      "amount_due": 249900,
+      "currency": "INR",
+      "receipt": "rcpt_567812",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Rohan Mehta",
+        "plan": "OTT Bundle",
+        "customer_id": "cust_TXgzwSTfOqNvvm",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466559
+    },
     {
       "id": "order_TXgzvvdCx8bL4b",
       "entity": "order",
