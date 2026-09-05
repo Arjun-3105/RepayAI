@@ -1,0 +1,50 @@
+{
+  "version": "v2-5000",
+  "total_cases": 5000,
+  "splits": {
+    "train": 3500,
+    "val": 750,
+    "test": 750
+  },
+  "decision_counts": {
+    "APPROVED": 1800,
+    "VERIFY": 1896,
+    "MANUAL_REVIEW": 1304
+  },
+  "archetype_counts": {
+    "legitimate_high": 1800,
+    "legitimate_medium": 1200,
+    "ai_generated": 150,
+    "manipulated_evidence": 250,
+    "wrong_product_claim": 500,
+    "ordinary_abuse": 800,
+    "reused_evidence": 300
+  },
+  "total_amount_inr": 38539631.51,
+  "approved_amount_inr": 13670093.19,
+  "prevented_amount_inr": 9999611.19,
+  "avg_confidence": 69.5,
+  "test_accuracy_pct": 96.3,
+  "per_archetype_accuracy": {
+    "legitimate_high": 100.0,
+    "legitimate_medium": 100.0,
+    "ordinary_abuse": 98.2,
+    "wrong_product_claim": 100.0,
+    "reused_evidence": 98.3,
+    "manipulated_evidence": 36.0,
+    "ai_generated": 88.7
+  },
+  "eval_vs_baseline": {
+    "baseline": {
+      "precision": 0.61,
+      "recall": 0.54,
+      "fpr": 0.12
+    },
+    "refundguard": {
+      "precision": 0.89,
+      "recall": 0.86,
+      "fpr": 0.06,
+      "false_positive_cost_inr": 0.0
+    }
+  }
+}

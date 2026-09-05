@@ -1,0 +1,1802 @@
+[
+  {
+    "event_id": "evt_cust_0001_014",
+    "customer_id": "cust_0001",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0002_011",
+    "customer_id": "cust_0002",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0003_004",
+    "customer_id": "cust_0003",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0004_009",
+    "customer_id": "cust_0004",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0005_012",
+    "customer_id": "cust_0005",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0006_013",
+    "customer_id": "cust_0006",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0007_008",
+    "customer_id": "cust_0007",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0008_007",
+    "customer_id": "cust_0008",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0009_008",
+    "customer_id": "cust_0009",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0010_011",
+    "customer_id": "cust_0010",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0011_006",
+    "customer_id": "cust_0011",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0012_014",
+    "customer_id": "cust_0012",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0013_009",
+    "customer_id": "cust_0013",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0014_003",
+    "customer_id": "cust_0014",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0015_013",
+    "customer_id": "cust_0015",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0016_006",
+    "customer_id": "cust_0016",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0017_006",
+    "customer_id": "cust_0017",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0018_013",
+    "customer_id": "cust_0018",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0019_012",
+    "customer_id": "cust_0019",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0020_007",
+    "customer_id": "cust_0020",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0021_007",
+    "customer_id": "cust_0021",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0022_007",
+    "customer_id": "cust_0022",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0023_008",
+    "customer_id": "cust_0023",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0024_009",
+    "customer_id": "cust_0024",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0025_009",
+    "customer_id": "cust_0025",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0026_005",
+    "customer_id": "cust_0026",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0027_005",
+    "customer_id": "cust_0027",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0028_009",
+    "customer_id": "cust_0028",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0029_006",
+    "customer_id": "cust_0029",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0030_007",
+    "customer_id": "cust_0030",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0031_009",
+    "customer_id": "cust_0031",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0032_010",
+    "customer_id": "cust_0032",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0033_014",
+    "customer_id": "cust_0033",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0034_014",
+    "customer_id": "cust_0034",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0035_009",
+    "customer_id": "cust_0035",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0036_007",
+    "customer_id": "cust_0036",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0037_006",
+    "customer_id": "cust_0037",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0038_003",
+    "customer_id": "cust_0038",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0039_010",
+    "customer_id": "cust_0039",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0040_003",
+    "customer_id": "cust_0040",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0041_009",
+    "customer_id": "cust_0041",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0042_014",
+    "customer_id": "cust_0042",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0043_007",
+    "customer_id": "cust_0043",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0044_013",
+    "customer_id": "cust_0044",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0045_014",
+    "customer_id": "cust_0045",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0046_013",
+    "customer_id": "cust_0046",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0047_008",
+    "customer_id": "cust_0047",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0048_004",
+    "customer_id": "cust_0048",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0049_009",
+    "customer_id": "cust_0049",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0050_013",
+    "customer_id": "cust_0050",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0051_007",
+    "customer_id": "cust_0051",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0052_011",
+    "customer_id": "cust_0052",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0053_010",
+    "customer_id": "cust_0053",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0054_009",
+    "customer_id": "cust_0054",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0055_009",
+    "customer_id": "cust_0055",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0056_010",
+    "customer_id": "cust_0056",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0057_009",
+    "customer_id": "cust_0057",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0058_010",
+    "customer_id": "cust_0058",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0059_003",
+    "customer_id": "cust_0059",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0060_009",
+    "customer_id": "cust_0060",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0061_010",
+    "customer_id": "cust_0061",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0062_004",
+    "customer_id": "cust_0062",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0063_007",
+    "customer_id": "cust_0063",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0064_006",
+    "customer_id": "cust_0064",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0065_005",
+    "customer_id": "cust_0065",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0066_010",
+    "customer_id": "cust_0066",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0067_004",
+    "customer_id": "cust_0067",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0068_006",
+    "customer_id": "cust_0068",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0069_007",
+    "customer_id": "cust_0069",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0070_009",
+    "customer_id": "cust_0070",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0071_006",
+    "customer_id": "cust_0071",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0072_010",
+    "customer_id": "cust_0072",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0073_010",
+    "customer_id": "cust_0073",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0074_008",
+    "customer_id": "cust_0074",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0075_004",
+    "customer_id": "cust_0075",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0076_006",
+    "customer_id": "cust_0076",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0077_010",
+    "customer_id": "cust_0077",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0078_003",
+    "customer_id": "cust_0078",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0079_010",
+    "customer_id": "cust_0079",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0080_006",
+    "customer_id": "cust_0080",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0081_008",
+    "customer_id": "cust_0081",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0082_004",
+    "customer_id": "cust_0082",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0083_003",
+    "customer_id": "cust_0083",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0084_008",
+    "customer_id": "cust_0084",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0085_007",
+    "customer_id": "cust_0085",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0086_004",
+    "customer_id": "cust_0086",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0087_007",
+    "customer_id": "cust_0087",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0088_007",
+    "customer_id": "cust_0088",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0089_007",
+    "customer_id": "cust_0089",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0090_011",
+    "customer_id": "cust_0090",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0091_007",
+    "customer_id": "cust_0091",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0092_014",
+    "customer_id": "cust_0092",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0093_004",
+    "customer_id": "cust_0093",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0094_008",
+    "customer_id": "cust_0094",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0095_009",
+    "customer_id": "cust_0095",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0096_008",
+    "customer_id": "cust_0096",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0097_005",
+    "customer_id": "cust_0097",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0098_012",
+    "customer_id": "cust_0098",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0099_010",
+    "customer_id": "cust_0099",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0100_008",
+    "customer_id": "cust_0100",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0101_012",
+    "customer_id": "cust_0101",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0102_014",
+    "customer_id": "cust_0102",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0103_005",
+    "customer_id": "cust_0103",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0104_008",
+    "customer_id": "cust_0104",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0105_007",
+    "customer_id": "cust_0105",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0106_009",
+    "customer_id": "cust_0106",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0107_005",
+    "customer_id": "cust_0107",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0108_012",
+    "customer_id": "cust_0108",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0109_014",
+    "customer_id": "cust_0109",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0110_005",
+    "customer_id": "cust_0110",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0111_005",
+    "customer_id": "cust_0111",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0112_009",
+    "customer_id": "cust_0112",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0113_005",
+    "customer_id": "cust_0113",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0114_005",
+    "customer_id": "cust_0114",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0115_004",
+    "customer_id": "cust_0115",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0116_012",
+    "customer_id": "cust_0116",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0117_003",
+    "customer_id": "cust_0117",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0118_013",
+    "customer_id": "cust_0118",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0119_003",
+    "customer_id": "cust_0119",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0120_011",
+    "customer_id": "cust_0120",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0121_008",
+    "customer_id": "cust_0121",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0122_014",
+    "customer_id": "cust_0122",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0123_003",
+    "customer_id": "cust_0123",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0124_009",
+    "customer_id": "cust_0124",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0125_012",
+    "customer_id": "cust_0125",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0126_007",
+    "customer_id": "cust_0126",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0127_014",
+    "customer_id": "cust_0127",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0128_010",
+    "customer_id": "cust_0128",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0129_013",
+    "customer_id": "cust_0129",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0130_005",
+    "customer_id": "cust_0130",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0131_011",
+    "customer_id": "cust_0131",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0132_013",
+    "customer_id": "cust_0132",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0133_003",
+    "customer_id": "cust_0133",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0134_011",
+    "customer_id": "cust_0134",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0135_008",
+    "customer_id": "cust_0135",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0136_006",
+    "customer_id": "cust_0136",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0137_012",
+    "customer_id": "cust_0137",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0138_012",
+    "customer_id": "cust_0138",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0139_008",
+    "customer_id": "cust_0139",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0140_003",
+    "customer_id": "cust_0140",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0141_009",
+    "customer_id": "cust_0141",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0142_012",
+    "customer_id": "cust_0142",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0143_005",
+    "customer_id": "cust_0143",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0144_012",
+    "customer_id": "cust_0144",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0145_004",
+    "customer_id": "cust_0145",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0146_012",
+    "customer_id": "cust_0146",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0147_009",
+    "customer_id": "cust_0147",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0148_006",
+    "customer_id": "cust_0148",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0149_008",
+    "customer_id": "cust_0149",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0150_006",
+    "customer_id": "cust_0150",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0151_007",
+    "customer_id": "cust_0151",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0152_014",
+    "customer_id": "cust_0152",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0153_011",
+    "customer_id": "cust_0153",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0154_009",
+    "customer_id": "cust_0154",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0155_007",
+    "customer_id": "cust_0155",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0156_003",
+    "customer_id": "cust_0156",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0157_004",
+    "customer_id": "cust_0157",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0158_010",
+    "customer_id": "cust_0158",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0159_013",
+    "customer_id": "cust_0159",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0160_007",
+    "customer_id": "cust_0160",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0161_013",
+    "customer_id": "cust_0161",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0162_011",
+    "customer_id": "cust_0162",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0163_014",
+    "customer_id": "cust_0163",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0164_003",
+    "customer_id": "cust_0164",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0165_005",
+    "customer_id": "cust_0165",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0166_013",
+    "customer_id": "cust_0166",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0167_014",
+    "customer_id": "cust_0167",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0168_014",
+    "customer_id": "cust_0168",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0169_005",
+    "customer_id": "cust_0169",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0170_013",
+    "customer_id": "cust_0170",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0171_010",
+    "customer_id": "cust_0171",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0172_007",
+    "customer_id": "cust_0172",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0173_012",
+    "customer_id": "cust_0173",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0174_007",
+    "customer_id": "cust_0174",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0175_014",
+    "customer_id": "cust_0175",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0176_006",
+    "customer_id": "cust_0176",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0177_013",
+    "customer_id": "cust_0177",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0178_011",
+    "customer_id": "cust_0178",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0179_013",
+    "customer_id": "cust_0179",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0180_013",
+    "customer_id": "cust_0180",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0181_013",
+    "customer_id": "cust_0181",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0182_008",
+    "customer_id": "cust_0182",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0183_011",
+    "customer_id": "cust_0183",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0184_004",
+    "customer_id": "cust_0184",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0185_008",
+    "customer_id": "cust_0185",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0186_006",
+    "customer_id": "cust_0186",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0187_005",
+    "customer_id": "cust_0187",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0188_007",
+    "customer_id": "cust_0188",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0189_004",
+    "customer_id": "cust_0189",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0190_004",
+    "customer_id": "cust_0190",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0191_010",
+    "customer_id": "cust_0191",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0192_006",
+    "customer_id": "cust_0192",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0193_012",
+    "customer_id": "cust_0193",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0194_009",
+    "customer_id": "cust_0194",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0195_009",
+    "customer_id": "cust_0195",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0196_012",
+    "customer_id": "cust_0196",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0197_008",
+    "customer_id": "cust_0197",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0198_003",
+    "customer_id": "cust_0198",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0199_014",
+    "customer_id": "cust_0199",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0200_008",
+    "customer_id": "cust_0200",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0201_006",
+    "customer_id": "cust_0201",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0202_004",
+    "customer_id": "cust_0202",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0203_010",
+    "customer_id": "cust_0203",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0204_009",
+    "customer_id": "cust_0204",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0205_008",
+    "customer_id": "cust_0205",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0206_009",
+    "customer_id": "cust_0206",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0207_011",
+    "customer_id": "cust_0207",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0208_010",
+    "customer_id": "cust_0208",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0209_005",
+    "customer_id": "cust_0209",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0210_007",
+    "customer_id": "cust_0210",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0211_005",
+    "customer_id": "cust_0211",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0212_013",
+    "customer_id": "cust_0212",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0213_014",
+    "customer_id": "cust_0213",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0214_005",
+    "customer_id": "cust_0214",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0215_013",
+    "customer_id": "cust_0215",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0216_013",
+    "customer_id": "cust_0216",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0217_005",
+    "customer_id": "cust_0217",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0218_013",
+    "customer_id": "cust_0218",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0219_009",
+    "customer_id": "cust_0219",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0220_006",
+    "customer_id": "cust_0220",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0221_014",
+    "customer_id": "cust_0221",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0222_012",
+    "customer_id": "cust_0222",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0223_009",
+    "customer_id": "cust_0223",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0224_011",
+    "customer_id": "cust_0224",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0225_009",
+    "customer_id": "cust_0225",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0226_010",
+    "customer_id": "cust_0226",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0227_005",
+    "customer_id": "cust_0227",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0228_003",
+    "customer_id": "cust_0228",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0229_012",
+    "customer_id": "cust_0229",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0230_003",
+    "customer_id": "cust_0230",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0231_014",
+    "customer_id": "cust_0231",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0232_009",
+    "customer_id": "cust_0232",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0233_007",
+    "customer_id": "cust_0233",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0234_011",
+    "customer_id": "cust_0234",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0235_005",
+    "customer_id": "cust_0235",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0236_004",
+    "customer_id": "cust_0236",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0237_013",
+    "customer_id": "cust_0237",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0238_008",
+    "customer_id": "cust_0238",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0239_005",
+    "customer_id": "cust_0239",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0240_008",
+    "customer_id": "cust_0240",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0241_003",
+    "customer_id": "cust_0241",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0242_011",
+    "customer_id": "cust_0242",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0243_007",
+    "customer_id": "cust_0243",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0244_013",
+    "customer_id": "cust_0244",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0245_005",
+    "customer_id": "cust_0245",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0246_010",
+    "customer_id": "cust_0246",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0247_013",
+    "customer_id": "cust_0247",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0248_006",
+    "customer_id": "cust_0248",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0249_014",
+    "customer_id": "cust_0249",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0250_006",
+    "customer_id": "cust_0250",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0251_006",
+    "customer_id": "cust_0251",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0252_008",
+    "customer_id": "cust_0252",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0253_007",
+    "customer_id": "cust_0253",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0254_014",
+    "customer_id": "cust_0254",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0255_010",
+    "customer_id": "cust_0255",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0256_013",
+    "customer_id": "cust_0256",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0257_012",
+    "customer_id": "cust_0257",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0258_004",
+    "customer_id": "cust_0258",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0259_005",
+    "customer_id": "cust_0259",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0260_003",
+    "customer_id": "cust_0260",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0261_004",
+    "customer_id": "cust_0261",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0262_010",
+    "customer_id": "cust_0262",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0263_007",
+    "customer_id": "cust_0263",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0264_010",
+    "customer_id": "cust_0264",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0265_013",
+    "customer_id": "cust_0265",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0266_005",
+    "customer_id": "cust_0266",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0267_013",
+    "customer_id": "cust_0267",
+    "archetype": "bank_instability",
+    "ground_truth_branch": "WAIT"
+  },
+  {
+    "event_id": "evt_cust_0268_012",
+    "customer_id": "cust_0268",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0269_003",
+    "customer_id": "cust_0269",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0270_014",
+    "customer_id": "cust_0270",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0271_011",
+    "customer_id": "cust_0271",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0272_003",
+    "customer_id": "cust_0272",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0273_013",
+    "customer_id": "cust_0273",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0274_011",
+    "customer_id": "cust_0274",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0275_007",
+    "customer_id": "cust_0275",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0276_008",
+    "customer_id": "cust_0276",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0277_012",
+    "customer_id": "cust_0277",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0278_014",
+    "customer_id": "cust_0278",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0279_007",
+    "customer_id": "cust_0279",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0280_006",
+    "customer_id": "cust_0280",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0281_004",
+    "customer_id": "cust_0281",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0282_012",
+    "customer_id": "cust_0282",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0283_003",
+    "customer_id": "cust_0283",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0284_004",
+    "customer_id": "cust_0284",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0285_003",
+    "customer_id": "cust_0285",
+    "archetype": "structurally_invalid",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0286_013",
+    "customer_id": "cust_0286",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0287_010",
+    "customer_id": "cust_0287",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0288_003",
+    "customer_id": "cust_0288",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0289_012",
+    "customer_id": "cust_0289",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0290_013",
+    "customer_id": "cust_0290",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0291_010",
+    "customer_id": "cust_0291",
+    "archetype": "mandate_lifecycle",
+    "ground_truth_branch": "REAUTHORIZE"
+  },
+  {
+    "event_id": "evt_cust_0292_011",
+    "customer_id": "cust_0292",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0293_004",
+    "customer_id": "cust_0293",
+    "archetype": "erratic_risk",
+    "ground_truth_branch": "ESCALATE"
+  },
+  {
+    "event_id": "evt_cust_0294_005",
+    "customer_id": "cust_0294",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0295_003",
+    "customer_id": "cust_0295",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0296_012",
+    "customer_id": "cust_0296",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0297_014",
+    "customer_id": "cust_0297",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0298_004",
+    "customer_id": "cust_0298",
+    "archetype": "genuinely_struggling",
+    "ground_truth_branch": "STOP"
+  },
+  {
+    "event_id": "evt_cust_0299_007",
+    "customer_id": "cust_0299",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  },
+  {
+    "event_id": "evt_cust_0300_013",
+    "customer_id": "cust_0300",
+    "archetype": "timing_mismatch",
+    "ground_truth_branch": "RECOVER"
+  }
+]

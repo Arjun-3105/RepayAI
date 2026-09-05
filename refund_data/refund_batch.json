@@ -1,0 +1,5094 @@
+[
+  {
+    "refund_id": "RF-74000",
+    "order_id": "ORD-82000",
+    "customer_id": "cust_r000",
+    "customer_display": "Aryan Maharaj",
+    "customer_email_masked": "ary***@gmail.com",
+    "customer_phone_masked": "+91-98648461XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN95909",
+    "serial_number_evidence": "SN75435",
+    "serial_match": false,
+    "amount_inr": 13782.91,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-23T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 74,
+      "order_consistency": 75,
+      "evidence_authenticity": 72,
+      "claim_consistency": 64,
+      "customer_history_score": 78
+    },
+    "overall_confidence": 72,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 15,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74001",
+    "order_id": "ORD-82001",
+    "customer_id": "cust_r001",
+    "customer_display": "Udant Dewan",
+    "customer_email_masked": "uda***@outlook.com",
+    "customer_phone_masked": "+91-97134877XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN21915",
+    "serial_number_evidence": "SN16175",
+    "serial_match": false,
+    "amount_inr": 14961.56,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-09-02T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 65,
+      "order_consistency": 59,
+      "evidence_authenticity": 78,
+      "claim_consistency": 65,
+      "customer_history_score": 95
+    },
+    "overall_confidence": 69,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 15,
+      "previous_refunds": 2,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.12
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74002",
+    "order_id": "ORD-82002",
+    "customer_id": "cust_r002",
+    "customer_display": "Gagan Sami",
+    "customer_email_masked": "gag***@gmail.com",
+    "customer_phone_masked": "+91-97654223XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN94012",
+    "serial_number_evidence": "SN54587",
+    "serial_match": false,
+    "amount_inr": 10522.97,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-26T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 43,
+      "order_consistency": 47,
+      "evidence_authenticity": 23,
+      "claim_consistency": 40,
+      "customer_history_score": 44
+    },
+    "overall_confidence": 40,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 4,
+      "previous_refunds": 9,
+      "previous_disputes": 2,
+      "chargeback_count": 2,
+      "refund_rate": 0.64
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74003",
+    "order_id": "ORD-82003",
+    "customer_id": "cust_r003",
+    "customer_display": "Ayushman Chander",
+    "customer_email_masked": "ayu***@yahoo.in",
+    "customer_phone_masked": "+91-97369918XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN88504",
+    "serial_number_evidence": "SN88504",
+    "serial_match": true,
+    "amount_inr": 3138.75,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-24T08:00:00+05:30",
+    "refund_requested_at": "2026-08-25T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 93,
+      "order_consistency": 92,
+      "evidence_authenticity": 82,
+      "claim_consistency": 87,
+      "customer_history_score": 93
+    },
+    "overall_confidence": 89,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 10,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74004",
+    "order_id": "ORD-82004",
+    "customer_id": "cust_r004",
+    "customer_display": "Viraj Tiwari",
+    "customer_email_masked": "vir***@outlook.com",
+    "customer_phone_masked": "+91-96229695XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN44741",
+    "serial_number_evidence": "SN79163",
+    "serial_match": false,
+    "amount_inr": 10235.51,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-12T08:00:00+05:30",
+    "refund_requested_at": "2026-08-15T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 52,
+      "order_consistency": 39,
+      "evidence_authenticity": 28,
+      "claim_consistency": 36,
+      "customer_history_score": 64
+    },
+    "overall_confidence": 42,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 4,
+      "previous_refunds": 9,
+      "previous_disputes": 1,
+      "chargeback_count": 2,
+      "refund_rate": 0.64
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74005",
+    "order_id": "ORD-82005",
+    "customer_id": "cust_r005",
+    "customer_display": "Rushil Saini",
+    "customer_email_masked": "rus***@gmail.com",
+    "customer_phone_masked": "+91-91771639XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN42493",
+    "serial_number_evidence": "SN39451",
+    "serial_match": false,
+    "amount_inr": 13593.6,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-15T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 64,
+      "order_consistency": 65,
+      "evidence_authenticity": 58,
+      "claim_consistency": 78,
+      "customer_history_score": 87
+    },
+    "overall_confidence": 68,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 11,
+      "successful_orders": 8,
+      "previous_refunds": 3,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.27
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74006",
+    "order_id": "ORD-82006",
+    "customer_id": "cust_r006",
+    "customer_display": "Saumya Mall",
+    "customer_email_masked": "sau***@outlook.com",
+    "customer_phone_masked": "+91-99637465XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN46500",
+    "serial_number_evidence": "SN46500",
+    "serial_match": true,
+    "amount_inr": 13033.9,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 92,
+      "evidence_authenticity": 88,
+      "claim_consistency": 94,
+      "customer_history_score": 90
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 25,
+      "successful_orders": 16,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74007",
+    "order_id": "ORD-82007",
+    "customer_id": "cust_r007",
+    "customer_display": "Nathaniel Sami",
+    "customer_email_masked": "nat***@gmail.com",
+    "customer_phone_masked": "+91-96529633XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN17944",
+    "serial_number_evidence": "SN62772",
+    "serial_match": false,
+    "amount_inr": 6754.43,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-28T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 48,
+      "order_consistency": 30,
+      "evidence_authenticity": 40,
+      "claim_consistency": 57,
+      "customer_history_score": 38
+    },
+    "overall_confidence": 43,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low"
+    ],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 4,
+      "previous_refunds": 5,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.5
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74008",
+    "order_id": "ORD-82008",
+    "customer_id": "cust_r008",
+    "customer_display": "Arunima Dugal",
+    "customer_email_masked": "aru***@gmail.com",
+    "customer_phone_masked": "+91-93157958XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN82132",
+    "serial_number_evidence": "SN82132",
+    "serial_match": true,
+    "amount_inr": 4496.29,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-09-04T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 85,
+      "evidence_authenticity": 82,
+      "claim_consistency": 87,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 87,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 22,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.05
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74009",
+    "order_id": "ORD-82009",
+    "customer_id": "cust_r009",
+    "customer_display": "Gayathri Chaudry",
+    "customer_email_masked": "gay***@yahoo.in",
+    "customer_phone_masked": "+91-91798950XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN65444",
+    "serial_number_evidence": "SN82845",
+    "serial_match": false,
+    "amount_inr": 4711.84,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-15T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 46,
+      "order_consistency": 42,
+      "evidence_authenticity": 30,
+      "claim_consistency": 34,
+      "customer_history_score": 41
+    },
+    "overall_confidence": 39,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 3,
+      "previous_refunds": 5,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.56
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74010",
+    "order_id": "ORD-82010",
+    "customer_id": "cust_r010",
+    "customer_display": "Lajita Chatterjee",
+    "customer_email_masked": "laj***@gmail.com",
+    "customer_phone_masked": "+91-98466841XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN17455",
+    "serial_number_evidence": "SN76562",
+    "serial_match": false,
+    "amount_inr": 9177.49,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-13T08:00:00+05:30",
+    "refund_requested_at": "2026-08-16T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 27,
+      "order_consistency": 47,
+      "evidence_authenticity": 20,
+      "claim_consistency": 32,
+      "customer_history_score": 54
+    },
+    "overall_confidence": 34,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 5,
+      "previous_refunds": 9,
+      "previous_disputes": 1,
+      "chargeback_count": 1,
+      "refund_rate": 0.6
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74011",
+    "order_id": "ORD-82011",
+    "customer_id": "cust_r011",
+    "customer_display": "Hemangini Lalla",
+    "customer_email_masked": "hem***@yahoo.in",
+    "customer_phone_masked": "+91-99141682XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN44179",
+    "serial_number_evidence": "SN44179",
+    "serial_match": true,
+    "amount_inr": 6868.15,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-13T08:00:00+05:30",
+    "refund_requested_at": "2026-08-19T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 91,
+      "order_consistency": 95,
+      "evidence_authenticity": 92,
+      "claim_consistency": 89,
+      "customer_history_score": 92
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 18,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74012",
+    "order_id": "ORD-82012",
+    "customer_id": "cust_r012",
+    "customer_display": "Tripti Yadav",
+    "customer_email_masked": "tri***@yahoo.in",
+    "customer_phone_masked": "+91-94924094XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN27361",
+    "serial_number_evidence": "SN55745",
+    "serial_match": false,
+    "amount_inr": 8525.88,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-13T08:00:00+05:30",
+    "refund_requested_at": "2026-08-18T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 64,
+      "order_consistency": 62,
+      "evidence_authenticity": 69,
+      "claim_consistency": 69,
+      "customer_history_score": 75
+    },
+    "overall_confidence": 67,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 9,
+      "previous_refunds": 3,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.25
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74013",
+    "order_id": "ORD-82013",
+    "customer_id": "cust_r013",
+    "customer_display": "Kritika Brar",
+    "customer_email_masked": "kri***@outlook.com",
+    "customer_phone_masked": "+91-91665821XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN45697",
+    "serial_number_evidence": "SN46930",
+    "serial_match": false,
+    "amount_inr": 4701.52,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-26T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 81,
+      "order_consistency": 61,
+      "evidence_authenticity": 80,
+      "claim_consistency": 70,
+      "customer_history_score": 76
+    },
+    "overall_confidence": 73,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 9,
+      "previous_refunds": 3,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.25
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74014",
+    "order_id": "ORD-82014",
+    "customer_id": "cust_r014",
+    "customer_display": "Janaki Handa",
+    "customer_email_masked": "jan***@yahoo.in",
+    "customer_phone_masked": "+91-92953679XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN93507",
+    "serial_number_evidence": "SN44335",
+    "serial_match": false,
+    "amount_inr": 1616.21,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 30,
+      "order_consistency": 43,
+      "evidence_authenticity": 29,
+      "claim_consistency": 47,
+      "customer_history_score": 57
+    },
+    "overall_confidence": 39,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 0,
+      "previous_refunds": 8,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.89
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74015",
+    "order_id": "ORD-82015",
+    "customer_id": "cust_r015",
+    "customer_display": "Chakradev Kari",
+    "customer_email_masked": "cha***@outlook.com",
+    "customer_phone_masked": "+91-96326489XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN26704",
+    "serial_number_evidence": "SN15482",
+    "serial_match": false,
+    "amount_inr": 9154.13,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-09-01T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 71,
+      "order_consistency": 66,
+      "evidence_authenticity": 59,
+      "claim_consistency": 71,
+      "customer_history_score": 76
+    },
+    "overall_confidence": 68,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 18,
+      "successful_orders": 17,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74016",
+    "order_id": "ORD-82016",
+    "customer_id": "cust_r016",
+    "customer_display": "Fariq Kaul",
+    "customer_email_masked": "far***@gmail.com",
+    "customer_phone_masked": "+91-97169438XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN13248",
+    "serial_number_evidence": "SN33509",
+    "serial_match": false,
+    "amount_inr": 13103.48,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-24T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 72,
+      "order_consistency": 80,
+      "evidence_authenticity": 71,
+      "claim_consistency": 81,
+      "customer_history_score": 93
+    },
+    "overall_confidence": 78,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 8,
+      "previous_refunds": 2,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.2
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74017",
+    "order_id": "ORD-82017",
+    "customer_id": "cust_r017",
+    "customer_display": "Lajita Mall",
+    "customer_email_masked": "laj***@gmail.com",
+    "customer_phone_masked": "+91-99906578XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN13101",
+    "serial_number_evidence": "SN96511",
+    "serial_match": false,
+    "amount_inr": 5894.22,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-26T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 46,
+      "order_consistency": 50,
+      "evidence_authenticity": 20,
+      "claim_consistency": 43,
+      "customer_history_score": 57
+    },
+    "overall_confidence": 42,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 11,
+      "successful_orders": 4,
+      "previous_refunds": 6,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.55
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74018",
+    "order_id": "ORD-82018",
+    "customer_id": "cust_r018",
+    "customer_display": "Janya Gaba",
+    "customer_email_masked": "jan***@outlook.com",
+    "customer_phone_masked": "+91-96048883XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN86099",
+    "serial_number_evidence": "SN44795",
+    "serial_match": false,
+    "amount_inr": 2613.78,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 26,
+      "order_consistency": 23,
+      "evidence_authenticity": 34,
+      "claim_consistency": 43,
+      "customer_history_score": 46
+    },
+    "overall_confidence": 32,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 5,
+      "previous_refunds": 6,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.5
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74019",
+    "order_id": "ORD-82019",
+    "customer_id": "cust_r019",
+    "customer_display": "Isha Kadakia",
+    "customer_email_masked": "ish***@gmail.com",
+    "customer_phone_masked": "+91-99741062XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN78146",
+    "serial_number_evidence": "SN78146",
+    "serial_match": true,
+    "amount_inr": 1620.41,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 96,
+      "order_consistency": 95,
+      "evidence_authenticity": 88,
+      "claim_consistency": 91,
+      "customer_history_score": 94
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 20,
+      "successful_orders": 19,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74020",
+    "order_id": "ORD-82020",
+    "customer_id": "cust_r020",
+    "customer_display": "Ekbal Garg",
+    "customer_email_masked": "ekb***@gmail.com",
+    "customer_phone_masked": "+91-98601987XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN35144",
+    "serial_number_evidence": "SN35144",
+    "serial_match": true,
+    "amount_inr": 10759.92,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-12T08:00:00+05:30",
+    "refund_requested_at": "2026-08-15T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 94,
+      "order_consistency": 95,
+      "evidence_authenticity": 94,
+      "claim_consistency": 96,
+      "customer_history_score": 99
+    },
+    "overall_confidence": 95,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 19,
+      "successful_orders": 21,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74021",
+    "order_id": "ORD-82021",
+    "customer_id": "cust_r021",
+    "customer_display": "Nihal Shere",
+    "customer_email_masked": "nih***@outlook.com",
+    "customer_phone_masked": "+91-92931313XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN32241",
+    "serial_number_evidence": "SN32241",
+    "serial_match": true,
+    "amount_inr": 7184.0,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-23T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 86,
+      "evidence_authenticity": 91,
+      "claim_consistency": 94,
+      "customer_history_score": 98
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 20,
+      "successful_orders": 11,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74022",
+    "order_id": "ORD-82022",
+    "customer_id": "cust_r022",
+    "customer_display": "Anamika Kanda",
+    "customer_email_masked": "ana***@yahoo.in",
+    "customer_phone_masked": "+91-92397064XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN64321",
+    "serial_number_evidence": "SN64321",
+    "serial_match": true,
+    "amount_inr": 14774.1,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-09-04T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 94,
+      "evidence_authenticity": 88,
+      "claim_consistency": 97,
+      "customer_history_score": 99
+    },
+    "overall_confidence": 95,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 25,
+      "successful_orders": 21,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.03
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74023",
+    "order_id": "ORD-82023",
+    "customer_id": "cust_r023",
+    "customer_display": "Daksh Karnik",
+    "customer_email_masked": "dak***@yahoo.in",
+    "customer_phone_masked": "+91-96800888XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN16582",
+    "serial_number_evidence": "SN83060",
+    "serial_match": false,
+    "amount_inr": 12256.54,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-13T08:00:00+05:30",
+    "refund_requested_at": "2026-08-21T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 47,
+      "order_consistency": 41,
+      "evidence_authenticity": 24,
+      "claim_consistency": 39,
+      "customer_history_score": 55
+    },
+    "overall_confidence": 40,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 13,
+      "successful_orders": 3,
+      "previous_refunds": 9,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.69
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74024",
+    "order_id": "ORD-82024",
+    "customer_id": "cust_r024",
+    "customer_display": "Diya Rattan",
+    "customer_email_masked": "diy***@outlook.com",
+    "customer_phone_masked": "+91-92015546XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN43972",
+    "serial_number_evidence": "SN42406",
+    "serial_match": false,
+    "amount_inr": 13559.91,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 51,
+      "order_consistency": 40,
+      "evidence_authenticity": 23,
+      "claim_consistency": 54,
+      "customer_history_score": 59
+    },
+    "overall_confidence": 44,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 6,
+      "previous_refunds": 7,
+      "previous_disputes": 1,
+      "chargeback_count": 1,
+      "refund_rate": 0.5
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74025",
+    "order_id": "ORD-82025",
+    "customer_id": "cust_r025",
+    "customer_display": "Dominic Kakar",
+    "customer_email_masked": "dom***@gmail.com",
+    "customer_phone_masked": "+91-96449617XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN28136",
+    "serial_number_evidence": "SN29769",
+    "serial_match": false,
+    "amount_inr": 5700.87,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-12T08:00:00+05:30",
+    "refund_requested_at": "2026-08-14T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 69,
+      "order_consistency": 67,
+      "evidence_authenticity": 80,
+      "claim_consistency": 64,
+      "customer_history_score": 92
+    },
+    "overall_confidence": 72,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 13,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74026",
+    "order_id": "ORD-82026",
+    "customer_id": "cust_r026",
+    "customer_display": "Simon Tata",
+    "customer_email_masked": "sim***@yahoo.in",
+    "customer_phone_masked": "+91-93890672XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN72518",
+    "serial_number_evidence": "SN10772",
+    "serial_match": false,
+    "amount_inr": 6451.68,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-09-05T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 36,
+      "order_consistency": 29,
+      "evidence_authenticity": 39,
+      "claim_consistency": 42,
+      "customer_history_score": 62
+    },
+    "overall_confidence": 39,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 5,
+      "previous_refunds": 8,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.57
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74027",
+    "order_id": "ORD-82027",
+    "customer_id": "cust_r027",
+    "customer_display": "Tara Dhar",
+    "customer_email_masked": "tar***@yahoo.in",
+    "customer_phone_masked": "+91-99424664XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN54057",
+    "serial_number_evidence": "SN54057",
+    "serial_match": true,
+    "amount_inr": 7100.7,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-09-05T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 95,
+      "evidence_authenticity": 94,
+      "claim_consistency": 97,
+      "customer_history_score": 90
+    },
+    "overall_confidence": 95,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 9,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74028",
+    "order_id": "ORD-82028",
+    "customer_id": "cust_r028",
+    "customer_display": "Liam Koshy",
+    "customer_email_masked": "lia***@yahoo.in",
+    "customer_phone_masked": "+91-97164412XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN52906",
+    "serial_number_evidence": "SN37742",
+    "serial_match": false,
+    "amount_inr": 3543.21,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 54,
+      "order_consistency": 48,
+      "evidence_authenticity": 20,
+      "claim_consistency": 59,
+      "customer_history_score": 58
+    },
+    "overall_confidence": 47,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%"
+    ],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 8,
+      "previous_refunds": 6,
+      "previous_disputes": 2,
+      "chargeback_count": 1,
+      "refund_rate": 0.4
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74029",
+    "order_id": "ORD-82029",
+    "customer_id": "cust_r029",
+    "customer_display": "Priya Rastogi",
+    "customer_email_masked": "pri***@gmail.com",
+    "customer_phone_masked": "+91-94358657XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN14067",
+    "serial_number_evidence": "SN14067",
+    "serial_match": true,
+    "amount_inr": 4138.11,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 91,
+      "order_consistency": 88,
+      "evidence_authenticity": 82,
+      "claim_consistency": 95,
+      "customer_history_score": 90
+    },
+    "overall_confidence": 89,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 24,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.05
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74030",
+    "order_id": "ORD-82030",
+    "customer_id": "cust_r030",
+    "customer_display": "Theodore Devi",
+    "customer_email_masked": "the***@yahoo.in",
+    "customer_phone_masked": "+91-94952997XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN24168",
+    "serial_number_evidence": "SN24168",
+    "serial_match": true,
+    "amount_inr": 11888.09,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-24T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 97,
+      "order_consistency": 85,
+      "evidence_authenticity": 91,
+      "claim_consistency": 95,
+      "customer_history_score": 98
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 22,
+      "successful_orders": 15,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74031",
+    "order_id": "ORD-82031",
+    "customer_id": "cust_r031",
+    "customer_display": "Gavin Batta",
+    "customer_email_masked": "gav***@gmail.com",
+    "customer_phone_masked": "+91-93308676XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN19038",
+    "serial_number_evidence": "SN76317",
+    "serial_match": false,
+    "amount_inr": 5859.85,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 82,
+      "order_consistency": 65,
+      "evidence_authenticity": 58,
+      "claim_consistency": 73,
+      "customer_history_score": 85
+    },
+    "overall_confidence": 71,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 13,
+      "successful_orders": 11,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.15
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74032",
+    "order_id": "ORD-82032",
+    "customer_id": "cust_r032",
+    "customer_display": "Michael Dutta",
+    "customer_email_masked": "mic***@outlook.com",
+    "customer_phone_masked": "+91-95260033XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN42177",
+    "serial_number_evidence": "SN21359",
+    "serial_match": false,
+    "amount_inr": 7507.23,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-27T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 70,
+      "order_consistency": 69,
+      "evidence_authenticity": 65,
+      "claim_consistency": 74,
+      "customer_history_score": 88
+    },
+    "overall_confidence": 71,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 11,
+      "previous_refunds": 3,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.21
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74033",
+    "order_id": "ORD-82033",
+    "customer_id": "cust_r033",
+    "customer_display": "Devansh Rajan",
+    "customer_email_masked": "dev***@gmail.com",
+    "customer_phone_masked": "+91-94149998XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN46655",
+    "serial_number_evidence": "SN88139",
+    "serial_match": false,
+    "amount_inr": 5966.55,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-27T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 84,
+      "order_consistency": 63,
+      "evidence_authenticity": 75,
+      "claim_consistency": 60,
+      "customer_history_score": 86
+    },
+    "overall_confidence": 72,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 11,
+      "successful_orders": 10,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.09
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74034",
+    "order_id": "ORD-82034",
+    "customer_id": "cust_r034",
+    "customer_display": "Upadhriti Wadhwa",
+    "customer_email_masked": "upa***@outlook.com",
+    "customer_phone_masked": "+91-96577180XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN48566",
+    "serial_number_evidence": "SN39045",
+    "serial_match": false,
+    "amount_inr": 7273.44,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 37,
+      "order_consistency": 42,
+      "evidence_authenticity": 22,
+      "claim_consistency": 39,
+      "customer_history_score": 56
+    },
+    "overall_confidence": 38,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 5,
+      "previous_refunds": 6,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.5
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74035",
+    "order_id": "ORD-82035",
+    "customer_id": "cust_r035",
+    "customer_display": "Advay Contractor",
+    "customer_email_masked": "adv***@outlook.com",
+    "customer_phone_masked": "+91-94624185XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN42951",
+    "serial_number_evidence": "SN40217",
+    "serial_match": false,
+    "amount_inr": 10838.97,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-26T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 65,
+      "order_consistency": 78,
+      "evidence_authenticity": 64,
+      "claim_consistency": 70,
+      "customer_history_score": 73
+    },
+    "overall_confidence": 70,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 7,
+      "previous_refunds": 3,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.3
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74036",
+    "order_id": "ORD-82036",
+    "customer_id": "cust_r036",
+    "customer_display": "Harini Choudhury",
+    "customer_email_masked": "har***@yahoo.in",
+    "customer_phone_masked": "+91-92655191XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN57301",
+    "serial_number_evidence": "SN33519",
+    "serial_match": false,
+    "amount_inr": 12655.8,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 49,
+      "order_consistency": 38,
+      "evidence_authenticity": 32,
+      "claim_consistency": 52,
+      "customer_history_score": 34
+    },
+    "overall_confidence": 42,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%"
+    ],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 4,
+      "previous_refunds": 4,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.44
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74037",
+    "order_id": "ORD-82037",
+    "customer_id": "cust_r037",
+    "customer_display": "Radhika Dugar",
+    "customer_email_masked": "rad***@gmail.com",
+    "customer_phone_masked": "+91-99997416XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN72746",
+    "serial_number_evidence": "SN67733",
+    "serial_match": false,
+    "amount_inr": 13217.08,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 72,
+      "order_consistency": 60,
+      "evidence_authenticity": 59,
+      "claim_consistency": 68,
+      "customer_history_score": 85
+    },
+    "overall_confidence": 67,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 13,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74038",
+    "order_id": "ORD-82038",
+    "customer_id": "cust_r038",
+    "customer_display": "Aarush Lall",
+    "customer_email_masked": "aar***@outlook.com",
+    "customer_phone_masked": "+91-96802848XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN42530",
+    "serial_number_evidence": "SN25525",
+    "serial_match": false,
+    "amount_inr": 12354.99,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 57,
+      "order_consistency": 51,
+      "evidence_authenticity": 29,
+      "claim_consistency": 54,
+      "customer_history_score": 55
+    },
+    "overall_confidence": 49,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%"
+    ],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 9,
+      "previous_refunds": 5,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.33
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74039",
+    "order_id": "ORD-82039",
+    "customer_id": "cust_r039",
+    "customer_display": "Yashica Cherian",
+    "customer_email_masked": "yas***@gmail.com",
+    "customer_phone_masked": "+91-98783270XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN37235",
+    "serial_number_evidence": "SN37235",
+    "serial_match": true,
+    "amount_inr": 8959.81,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-28T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 88,
+      "evidence_authenticity": 90,
+      "claim_consistency": 96,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 14,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.03
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74040",
+    "order_id": "ORD-82040",
+    "customer_id": "cust_r040",
+    "customer_display": "Yashica Issac",
+    "customer_email_masked": "yas***@outlook.com",
+    "customer_phone_masked": "+91-94481628XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN19329",
+    "serial_number_evidence": "SN19329",
+    "serial_match": true,
+    "amount_inr": 4239.67,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 88,
+      "evidence_authenticity": 90,
+      "claim_consistency": 98,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 94,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 22,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.05
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74041",
+    "order_id": "ORD-82041",
+    "customer_id": "cust_r041",
+    "customer_display": "Kashvi Edwin",
+    "customer_email_masked": "kas***@yahoo.in",
+    "customer_phone_masked": "+91-98912942XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN67560",
+    "serial_number_evidence": "SN67560",
+    "serial_match": true,
+    "amount_inr": 3321.92,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-25T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 92,
+      "evidence_authenticity": 91,
+      "claim_consistency": 97,
+      "customer_history_score": 94
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 25,
+      "successful_orders": 23,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74042",
+    "order_id": "ORD-82042",
+    "customer_id": "cust_r042",
+    "customer_display": "Ekiya Suresh",
+    "customer_email_masked": "eki***@outlook.com",
+    "customer_phone_masked": "+91-97445121XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN85529",
+    "serial_number_evidence": "SN85529",
+    "serial_match": true,
+    "amount_inr": 4203.94,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-09-03T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 88,
+      "order_consistency": 97,
+      "evidence_authenticity": 87,
+      "claim_consistency": 93,
+      "customer_history_score": 96
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 17,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.08
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74043",
+    "order_id": "ORD-82043",
+    "customer_id": "cust_r043",
+    "customer_display": "Isaac Patil",
+    "customer_email_masked": "isa***@yahoo.in",
+    "customer_phone_masked": "+91-95237224XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN31079",
+    "serial_number_evidence": "SN53228",
+    "serial_match": false,
+    "amount_inr": 6715.87,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-21T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 75,
+      "order_consistency": 77,
+      "evidence_authenticity": 73,
+      "claim_consistency": 69,
+      "customer_history_score": 91
+    },
+    "overall_confidence": 76,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 8,
+      "successful_orders": 5,
+      "previous_refunds": 3,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.38
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74044",
+    "order_id": "ORD-82044",
+    "customer_id": "cust_r044",
+    "customer_display": "Wriddhish Bhardwaj",
+    "customer_email_masked": "wri***@yahoo.in",
+    "customer_phone_masked": "+91-96742499XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN64165",
+    "serial_number_evidence": "SN64165",
+    "serial_match": true,
+    "amount_inr": 10206.25,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-12T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 88,
+      "order_consistency": 88,
+      "evidence_authenticity": 93,
+      "claim_consistency": 95,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 10,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74045",
+    "order_id": "ORD-82045",
+    "customer_id": "cust_r045",
+    "customer_display": "Farhan Chada",
+    "customer_email_masked": "far***@gmail.com",
+    "customer_phone_masked": "+91-94825475XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN50730",
+    "serial_number_evidence": "SN82199",
+    "serial_match": false,
+    "amount_inr": 1403.17,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-25T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 25,
+      "order_consistency": 37,
+      "evidence_authenticity": 28,
+      "claim_consistency": 32,
+      "customer_history_score": 42
+    },
+    "overall_confidence": 32,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 1,
+      "previous_refunds": 7,
+      "previous_disputes": 3,
+      "chargeback_count": 0,
+      "refund_rate": 0.78
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74046",
+    "order_id": "ORD-82046",
+    "customer_id": "cust_r046",
+    "customer_display": "Ekapad Walia",
+    "customer_email_masked": "eka***@outlook.com",
+    "customer_phone_masked": "+91-97655044XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN69871",
+    "serial_number_evidence": "SN82255",
+    "serial_match": false,
+    "amount_inr": 12685.14,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-18T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 66,
+      "order_consistency": 67,
+      "evidence_authenticity": 64,
+      "claim_consistency": 79,
+      "customer_history_score": 86
+    },
+    "overall_confidence": 70,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 8,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.11
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74047",
+    "order_id": "ORD-82047",
+    "customer_id": "cust_r047",
+    "customer_display": "Kabir Soman",
+    "customer_email_masked": "kab***@outlook.com",
+    "customer_phone_masked": "+91-94130083XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN68529",
+    "serial_number_evidence": "SN80592",
+    "serial_match": false,
+    "amount_inr": 11163.71,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 77,
+      "order_consistency": 66,
+      "evidence_authenticity": 68,
+      "claim_consistency": 77,
+      "customer_history_score": 94
+    },
+    "overall_confidence": 74,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 13,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.13
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74048",
+    "order_id": "ORD-82048",
+    "customer_id": "cust_r048",
+    "customer_display": "Alka Wable",
+    "customer_email_masked": "alk***@outlook.com",
+    "customer_phone_masked": "+91-92315466XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN51704",
+    "serial_number_evidence": "SN51704",
+    "serial_match": true,
+    "amount_inr": 12983.18,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 99,
+      "order_consistency": 92,
+      "evidence_authenticity": 94,
+      "claim_consistency": 92,
+      "customer_history_score": 98
+    },
+    "overall_confidence": 95,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 24,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.03
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74049",
+    "order_id": "ORD-82049",
+    "customer_id": "cust_r049",
+    "customer_display": "Siddharth Zacharia",
+    "customer_email_masked": "sid***@yahoo.in",
+    "customer_phone_masked": "+91-95150590XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN95823",
+    "serial_number_evidence": "SN95823",
+    "serial_match": true,
+    "amount_inr": 1213.87,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-09-01T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 90,
+      "order_consistency": 86,
+      "evidence_authenticity": 97,
+      "claim_consistency": 98,
+      "customer_history_score": 92
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 22,
+      "successful_orders": 11,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74050",
+    "order_id": "ORD-82050",
+    "customer_id": "cust_r050",
+    "customer_display": "Devika Rastogi",
+    "customer_email_masked": "dev***@gmail.com",
+    "customer_phone_masked": "+91-91602851XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN39817",
+    "serial_number_evidence": "SN21846",
+    "serial_match": false,
+    "amount_inr": 9643.43,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-27T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 53,
+      "order_consistency": 41,
+      "evidence_authenticity": 34,
+      "claim_consistency": 55,
+      "customer_history_score": 52
+    },
+    "overall_confidence": 46,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%"
+    ],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 2,
+      "previous_refunds": 7,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.7
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74051",
+    "order_id": "ORD-82051",
+    "customer_id": "cust_r051",
+    "customer_display": "Raksha Varughese",
+    "customer_email_masked": "rak***@gmail.com",
+    "customer_phone_masked": "+91-97523084XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN42007",
+    "serial_number_evidence": "SN79621",
+    "serial_match": false,
+    "amount_inr": 6017.49,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-19T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 75,
+      "order_consistency": 73,
+      "evidence_authenticity": 79,
+      "claim_consistency": 65,
+      "customer_history_score": 75
+    },
+    "overall_confidence": 73,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 16,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74052",
+    "order_id": "ORD-82052",
+    "customer_id": "cust_r052",
+    "customer_display": "Jai Kota",
+    "customer_email_masked": "jai***@outlook.com",
+    "customer_phone_masked": "+91-96561598XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN43466",
+    "serial_number_evidence": "SN43466",
+    "serial_match": true,
+    "amount_inr": 7455.1,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 85,
+      "evidence_authenticity": 96,
+      "claim_consistency": 90,
+      "customer_history_score": 98
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 11,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.08
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74053",
+    "order_id": "ORD-82053",
+    "customer_id": "cust_r053",
+    "customer_display": "Devansh Nigam",
+    "customer_email_masked": "dev***@yahoo.in",
+    "customer_phone_masked": "+91-91106182XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN73335",
+    "serial_number_evidence": "SN23979",
+    "serial_match": false,
+    "amount_inr": 12833.25,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-23T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 69,
+      "order_consistency": 67,
+      "evidence_authenticity": 76,
+      "claim_consistency": 71,
+      "customer_history_score": 88
+    },
+    "overall_confidence": 72,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 9,
+      "previous_refunds": 3,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.25
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74054",
+    "order_id": "ORD-82054",
+    "customer_id": "cust_r054",
+    "customer_display": "Victor Kannan",
+    "customer_email_masked": "vic***@outlook.com",
+    "customer_phone_masked": "+91-95782326XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN89569",
+    "serial_number_evidence": "SN89569",
+    "serial_match": true,
+    "amount_inr": 12658.74,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 93,
+      "order_consistency": 88,
+      "evidence_authenticity": 88,
+      "claim_consistency": 95,
+      "customer_history_score": 92
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 12,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74055",
+    "order_id": "ORD-82055",
+    "customer_id": "cust_r055",
+    "customer_display": "Ekavir Bhargava",
+    "customer_email_masked": "eka***@yahoo.in",
+    "customer_phone_masked": "+91-95439624XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN36318",
+    "serial_number_evidence": "SN36318",
+    "serial_match": true,
+    "amount_inr": 5573.07,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-19T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 90,
+      "order_consistency": 97,
+      "evidence_authenticity": 93,
+      "claim_consistency": 94,
+      "customer_history_score": 96
+    },
+    "overall_confidence": 94,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 17,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.08
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74056",
+    "order_id": "ORD-82056",
+    "customer_id": "cust_r056",
+    "customer_display": "Ekansh Balay",
+    "customer_email_masked": "eka***@outlook.com",
+    "customer_phone_masked": "+91-94436284XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN83048",
+    "serial_number_evidence": "SN57942",
+    "serial_match": false,
+    "amount_inr": 2969.6,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 64,
+      "order_consistency": 80,
+      "evidence_authenticity": 70,
+      "claim_consistency": 60,
+      "customer_history_score": 78
+    },
+    "overall_confidence": 70,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 14,
+      "previous_refunds": 1,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74057",
+    "order_id": "ORD-82057",
+    "customer_id": "cust_r057",
+    "customer_display": "Ekavir Varkey",
+    "customer_email_masked": "eka***@outlook.com",
+    "customer_phone_masked": "+91-99509762XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN13280",
+    "serial_number_evidence": "SN91205",
+    "serial_match": false,
+    "amount_inr": 2515.85,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 42,
+      "order_consistency": 30,
+      "evidence_authenticity": 44,
+      "claim_consistency": 49,
+      "customer_history_score": 42
+    },
+    "overall_confidence": 41,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 9,
+      "previous_refunds": 4,
+      "previous_disputes": 2,
+      "chargeback_count": 2,
+      "refund_rate": 0.29
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74058",
+    "order_id": "ORD-82058",
+    "customer_id": "cust_r058",
+    "customer_display": "Arya Sunder",
+    "customer_email_masked": "ary***@yahoo.in",
+    "customer_phone_masked": "+91-96437993XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN74569",
+    "serial_number_evidence": "SN74569",
+    "serial_match": true,
+    "amount_inr": 1633.86,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-28T08:00:00+05:30",
+    "refund_requested_at": "2026-09-02T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 86,
+      "evidence_authenticity": 89,
+      "claim_consistency": 94,
+      "customer_history_score": 90
+    },
+    "overall_confidence": 89,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 20,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74059",
+    "order_id": "ORD-82059",
+    "customer_id": "cust_r059",
+    "customer_display": "Kevin Solanki",
+    "customer_email_masked": "kev***@outlook.com",
+    "customer_phone_masked": "+91-93487825XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN58566",
+    "serial_number_evidence": "SN38477",
+    "serial_match": false,
+    "amount_inr": 9618.13,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-21T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 76,
+      "order_consistency": 69,
+      "evidence_authenticity": 65,
+      "claim_consistency": 71,
+      "customer_history_score": 73
+    },
+    "overall_confidence": 71,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 14,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.12
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74060",
+    "order_id": "ORD-82060",
+    "customer_id": "cust_r060",
+    "customer_display": "Urvashi Ray",
+    "customer_email_masked": "urv***@outlook.com",
+    "customer_phone_masked": "+91-98811610XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN53713",
+    "serial_number_evidence": "SN53713",
+    "serial_match": true,
+    "amount_inr": 10277.76,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 91,
+      "order_consistency": 87,
+      "evidence_authenticity": 88,
+      "claim_consistency": 87,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 90,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 15,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74061",
+    "order_id": "ORD-82061",
+    "customer_id": "cust_r061",
+    "customer_display": "Girindra Chatterjee",
+    "customer_email_masked": "gir***@yahoo.in",
+    "customer_phone_masked": "+91-96517677XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN32871",
+    "serial_number_evidence": "SN32871",
+    "serial_match": true,
+    "amount_inr": 14824.38,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-12T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 95,
+      "evidence_authenticity": 82,
+      "claim_consistency": 88,
+      "customer_history_score": 88
+    },
+    "overall_confidence": 89,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 19,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.03
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74062",
+    "order_id": "ORD-82062",
+    "customer_id": "cust_r062",
+    "customer_display": "Irya Sampath",
+    "customer_email_masked": "iry***@outlook.com",
+    "customer_phone_masked": "+91-96587297XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN69245",
+    "serial_number_evidence": "SN69245",
+    "serial_match": true,
+    "amount_inr": 7666.44,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-18T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 96,
+      "order_consistency": 88,
+      "evidence_authenticity": 83,
+      "claim_consistency": 97,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 19,
+      "successful_orders": 23,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.02
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74063",
+    "order_id": "ORD-82063",
+    "customer_id": "cust_r063",
+    "customer_display": "Unni Bhagat",
+    "customer_email_masked": "unn***@outlook.com",
+    "customer_phone_masked": "+91-95992586XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN20589",
+    "serial_number_evidence": "SN52219",
+    "serial_match": false,
+    "amount_inr": 10972.62,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-15T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 44,
+      "order_consistency": 24,
+      "evidence_authenticity": 17,
+      "claim_consistency": 34,
+      "customer_history_score": 43
+    },
+    "overall_confidence": 32,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 13,
+      "successful_orders": 3,
+      "previous_refunds": 9,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.69
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74064",
+    "order_id": "ORD-82064",
+    "customer_id": "cust_r064",
+    "customer_display": "Darsh Rau",
+    "customer_email_masked": "dar***@gmail.com",
+    "customer_phone_masked": "+91-96944161XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN24996",
+    "serial_number_evidence": "SN95814",
+    "serial_match": false,
+    "amount_inr": 8076.72,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-18T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 45,
+      "order_consistency": 48,
+      "evidence_authenticity": 39,
+      "claim_consistency": 47,
+      "customer_history_score": 58
+    },
+    "overall_confidence": 46,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 4,
+      "previous_refunds": 7,
+      "previous_disputes": 1,
+      "chargeback_count": 1,
+      "refund_rate": 0.58
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74065",
+    "order_id": "ORD-82065",
+    "customer_id": "cust_r065",
+    "customer_display": "Ikbal Kothari",
+    "customer_email_masked": "ikb***@gmail.com",
+    "customer_phone_masked": "+91-98292417XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN59060",
+    "serial_number_evidence": "SN59060",
+    "serial_match": true,
+    "amount_inr": 5374.68,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 90,
+      "order_consistency": 95,
+      "evidence_authenticity": 97,
+      "claim_consistency": 87,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 22,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74066",
+    "order_id": "ORD-82066",
+    "customer_id": "cust_r066",
+    "customer_display": "Ranveer Yadav",
+    "customer_email_masked": "ran***@gmail.com",
+    "customer_phone_masked": "+91-95589081XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN47700",
+    "serial_number_evidence": "SN88696",
+    "serial_match": false,
+    "amount_inr": 6750.32,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-16T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 34,
+      "order_consistency": 31,
+      "evidence_authenticity": 18,
+      "claim_consistency": 48,
+      "customer_history_score": 51
+    },
+    "overall_confidence": 35,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 8,
+      "previous_refunds": 5,
+      "previous_disputes": 2,
+      "chargeback_count": 0,
+      "refund_rate": 0.36
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74067",
+    "order_id": "ORD-82067",
+    "customer_id": "cust_r067",
+    "customer_display": "Logan Sami",
+    "customer_email_masked": "log***@outlook.com",
+    "customer_phone_masked": "+91-95049953XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN83526",
+    "serial_number_evidence": "SN91490",
+    "serial_match": false,
+    "amount_inr": 11675.48,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 81,
+      "order_consistency": 76,
+      "evidence_authenticity": 78,
+      "claim_consistency": 77,
+      "customer_history_score": 70
+    },
+    "overall_confidence": 77,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 9,
+      "previous_refunds": 3,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.25
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74068",
+    "order_id": "ORD-82068",
+    "customer_id": "cust_r068",
+    "customer_display": "Arya Shere",
+    "customer_email_masked": "ary***@outlook.com",
+    "customer_phone_masked": "+91-93063157XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN19120",
+    "serial_number_evidence": "SN28595",
+    "serial_match": false,
+    "amount_inr": 3538.68,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-09-01T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 63,
+      "order_consistency": 58,
+      "evidence_authenticity": 10,
+      "claim_consistency": 37,
+      "customer_history_score": 53
+    },
+    "overall_confidence": 45,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 6,
+      "previous_refunds": 5,
+      "previous_disputes": 2,
+      "chargeback_count": 1,
+      "refund_rate": 0.42
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74069",
+    "order_id": "ORD-82069",
+    "customer_id": "cust_r069",
+    "customer_display": "Faqid Savant",
+    "customer_email_masked": "faq***@yahoo.in",
+    "customer_phone_masked": "+91-97715424XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN30392",
+    "serial_number_evidence": "SN30392",
+    "serial_match": true,
+    "amount_inr": 11874.7,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 90,
+      "order_consistency": 97,
+      "evidence_authenticity": 83,
+      "claim_consistency": 96,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 22,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74070",
+    "order_id": "ORD-82070",
+    "customer_id": "cust_r070",
+    "customer_display": "Chandresh Zachariah",
+    "customer_email_masked": "cha***@yahoo.in",
+    "customer_phone_masked": "+91-96644632XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN15952",
+    "serial_number_evidence": "SN15952",
+    "serial_match": true,
+    "amount_inr": 2551.46,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-19T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 91,
+      "order_consistency": 91,
+      "evidence_authenticity": 83,
+      "claim_consistency": 86,
+      "customer_history_score": 91
+    },
+    "overall_confidence": 88,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 13,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74071",
+    "order_id": "ORD-82071",
+    "customer_id": "cust_r071",
+    "customer_display": "Girik Khalsa",
+    "customer_email_masked": "gir***@gmail.com",
+    "customer_phone_masked": "+91-99390463XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN19447",
+    "serial_number_evidence": "SN62044",
+    "serial_match": false,
+    "amount_inr": 8455.15,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 63,
+      "order_consistency": 39,
+      "evidence_authenticity": 23,
+      "claim_consistency": 35,
+      "customer_history_score": 44
+    },
+    "overall_confidence": 42,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 13,
+      "successful_orders": 6,
+      "previous_refunds": 6,
+      "previous_disputes": 2,
+      "chargeback_count": 2,
+      "refund_rate": 0.46
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74072",
+    "order_id": "ORD-82072",
+    "customer_id": "cust_r072",
+    "customer_display": "Niharika Sunder",
+    "customer_email_masked": "nih***@gmail.com",
+    "customer_phone_masked": "+91-95066853XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN91018",
+    "serial_number_evidence": "SN70305",
+    "serial_match": false,
+    "amount_inr": 6669.45,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 84,
+      "order_consistency": 66,
+      "evidence_authenticity": 60,
+      "claim_consistency": 73,
+      "customer_history_score": 73
+    },
+    "overall_confidence": 71,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 15,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.12
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74073",
+    "order_id": "ORD-82073",
+    "customer_id": "cust_r073",
+    "customer_display": "Tanay Rattan",
+    "customer_email_masked": "tan***@outlook.com",
+    "customer_phone_masked": "+91-93585632XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN79547",
+    "serial_number_evidence": "SN76840",
+    "serial_match": false,
+    "amount_inr": 11906.65,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 46,
+      "order_consistency": 49,
+      "evidence_authenticity": 21,
+      "claim_consistency": 58,
+      "customer_history_score": 60
+    },
+    "overall_confidence": 46,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%"
+    ],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 4,
+      "previous_refunds": 5,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.5
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74074",
+    "order_id": "ORD-82074",
+    "customer_id": "cust_r074",
+    "customer_display": "Nitesh Raghavan",
+    "customer_email_masked": "nit***@outlook.com",
+    "customer_phone_masked": "+91-97146266XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN83889",
+    "serial_number_evidence": "SN85952",
+    "serial_match": false,
+    "amount_inr": 3479.05,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 76,
+      "order_consistency": 76,
+      "evidence_authenticity": 76,
+      "claim_consistency": 80,
+      "customer_history_score": 90
+    },
+    "overall_confidence": 78,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 18,
+      "successful_orders": 16,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.11
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74075",
+    "order_id": "ORD-82075",
+    "customer_id": "cust_r075",
+    "customer_display": "Madhavi Lanka",
+    "customer_email_masked": "mad***@yahoo.in",
+    "customer_phone_masked": "+91-97646259XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN50685",
+    "serial_number_evidence": "SN70521",
+    "serial_match": false,
+    "amount_inr": 9278.88,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-18T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 54,
+      "order_consistency": 39,
+      "evidence_authenticity": 11,
+      "claim_consistency": 46,
+      "customer_history_score": 56
+    },
+    "overall_confidence": 40,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 9,
+      "previous_refunds": 4,
+      "previous_disputes": 1,
+      "chargeback_count": 2,
+      "refund_rate": 0.29
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74076",
+    "order_id": "ORD-82076",
+    "customer_id": "cust_r076",
+    "customer_display": "Bhavika Sampath",
+    "customer_email_masked": "bha***@gmail.com",
+    "customer_phone_masked": "+91-96759577XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN89299",
+    "serial_number_evidence": "SN89299",
+    "serial_match": true,
+    "amount_inr": 7295.27,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-23T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 95,
+      "order_consistency": 93,
+      "evidence_authenticity": 86,
+      "claim_consistency": 86,
+      "customer_history_score": 95
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 20,
+      "successful_orders": 11,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.02
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74077",
+    "order_id": "ORD-82077",
+    "customer_id": "cust_r077",
+    "customer_display": "Mohammed Gupta",
+    "customer_email_masked": "moh***@outlook.com",
+    "customer_phone_masked": "+91-99891659XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN63578",
+    "serial_number_evidence": "SN54350",
+    "serial_match": false,
+    "amount_inr": 6218.93,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-20T08:00:00+05:30",
+    "refund_requested_at": "2026-08-27T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 46,
+      "order_consistency": 39,
+      "evidence_authenticity": 16,
+      "claim_consistency": 55,
+      "customer_history_score": 55
+    },
+    "overall_confidence": 41,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low"
+    ],
+    "customer_history": {
+      "total_orders": 9,
+      "successful_orders": 2,
+      "previous_refunds": 6,
+      "previous_disputes": 2,
+      "chargeback_count": 0,
+      "refund_rate": 0.67
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74078",
+    "order_id": "ORD-82078",
+    "customer_id": "cust_r078",
+    "customer_display": "Teerth Bhardwaj",
+    "customer_email_masked": "tee***@outlook.com",
+    "customer_phone_masked": "+91-92110449XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN20682",
+    "serial_number_evidence": "SN86380",
+    "serial_match": false,
+    "amount_inr": 11131.27,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-08-31T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 46,
+      "order_consistency": 24,
+      "evidence_authenticity": 44,
+      "claim_consistency": 41,
+      "customer_history_score": 44
+    },
+    "overall_confidence": 39,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 4,
+      "previous_refunds": 9,
+      "previous_disputes": 2,
+      "chargeback_count": 0,
+      "refund_rate": 0.64
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74079",
+    "order_id": "ORD-82079",
+    "customer_id": "cust_r079",
+    "customer_display": "Dipta Bhandari",
+    "customer_email_masked": "dip***@yahoo.in",
+    "customer_phone_masked": "+91-93969327XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN94675",
+    "serial_number_evidence": "SN97878",
+    "serial_match": false,
+    "amount_inr": 12383.59,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-13T08:00:00+05:30",
+    "refund_requested_at": "2026-08-15T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 38,
+      "order_consistency": 36,
+      "evidence_authenticity": 26,
+      "claim_consistency": 30,
+      "customer_history_score": 46
+    },
+    "overall_confidence": 34,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 4,
+      "previous_refunds": 5,
+      "previous_disputes": 2,
+      "chargeback_count": 1,
+      "refund_rate": 0.5
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74080",
+    "order_id": "ORD-82080",
+    "customer_id": "cust_r080",
+    "customer_display": "Vansha Thakkar",
+    "customer_email_masked": "van***@gmail.com",
+    "customer_phone_masked": "+91-96385256XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN96760",
+    "serial_number_evidence": "SN54140",
+    "serial_match": false,
+    "amount_inr": 5140.09,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-26T08:00:00+05:30",
+    "refund_requested_at": "2026-08-27T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 81,
+      "order_consistency": 59,
+      "evidence_authenticity": 77,
+      "claim_consistency": 72,
+      "customer_history_score": 74
+    },
+    "overall_confidence": 72,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 17,
+      "successful_orders": 16,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74081",
+    "order_id": "ORD-82081",
+    "customer_id": "cust_r081",
+    "customer_display": "Dakshesh Trivedi",
+    "customer_email_masked": "dak***@yahoo.in",
+    "customer_phone_masked": "+91-93124135XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN79993",
+    "serial_number_evidence": "SN79993",
+    "serial_match": true,
+    "amount_inr": 9547.34,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-15T08:00:00+05:30",
+    "refund_requested_at": "2026-08-19T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 91,
+      "order_consistency": 89,
+      "evidence_authenticity": 97,
+      "claim_consistency": 99,
+      "customer_history_score": 91
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 23,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74082",
+    "order_id": "ORD-82082",
+    "customer_id": "cust_r082",
+    "customer_display": "Quincy Biswas",
+    "customer_email_masked": "qui***@gmail.com",
+    "customer_phone_masked": "+91-93910267XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN82684",
+    "serial_number_evidence": "SN82684",
+    "serial_match": true,
+    "amount_inr": 1729.52,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 96,
+      "evidence_authenticity": 85,
+      "claim_consistency": 90,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 90,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 18,
+      "successful_orders": 23,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74083",
+    "order_id": "ORD-82083",
+    "customer_id": "cust_r083",
+    "customer_display": "Wahab Raval",
+    "customer_email_masked": "wah***@gmail.com",
+    "customer_phone_masked": "+91-91502046XX",
+    "product_name": "Wireless Headphones",
+    "product_sku": "HD-482",
+    "product_category": "Electronics",
+    "serial_number_order": "SN40903",
+    "serial_number_evidence": "SN60615",
+    "serial_match": false,
+    "amount_inr": 6807.56,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-17T08:00:00+05:30",
+    "refund_requested_at": "2026-08-23T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 42,
+      "order_consistency": 49,
+      "evidence_authenticity": 17,
+      "claim_consistency": 35,
+      "customer_history_score": 40
+    },
+    "overall_confidence": 37,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 4,
+      "previous_refunds": 9,
+      "previous_disputes": 2,
+      "chargeback_count": 0,
+      "refund_rate": 0.64
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74084",
+    "order_id": "ORD-82084",
+    "customer_id": "cust_r084",
+    "customer_display": "Yatin Baral",
+    "customer_email_masked": "yat***@gmail.com",
+    "customer_phone_masked": "+91-92457346XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN90654",
+    "serial_number_evidence": "SN10688",
+    "serial_match": false,
+    "amount_inr": 11622.78,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-14T08:00:00+05:30",
+    "refund_requested_at": "2026-08-22T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 42,
+      "order_consistency": 38,
+      "evidence_authenticity": 18,
+      "claim_consistency": 41,
+      "customer_history_score": 56
+    },
+    "overall_confidence": 37,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 5,
+      "previous_refunds": 8,
+      "previous_disputes": 3,
+      "chargeback_count": 2,
+      "refund_rate": 0.57
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74085",
+    "order_id": "ORD-82085",
+    "customer_id": "cust_r085",
+    "customer_display": "Oni Virk",
+    "customer_email_masked": "oni***@outlook.com",
+    "customer_phone_masked": "+91-94153183XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN93748",
+    "serial_number_evidence": "SN93748",
+    "serial_match": true,
+    "amount_inr": 2704.88,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-22T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 97,
+      "order_consistency": 92,
+      "evidence_authenticity": 84,
+      "claim_consistency": 87,
+      "customer_history_score": 95
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 16,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74086",
+    "order_id": "ORD-82086",
+    "customer_id": "cust_r086",
+    "customer_display": "Advika Jayaraman",
+    "customer_email_masked": "adv***@yahoo.in",
+    "customer_phone_masked": "+91-91212855XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN18870",
+    "serial_number_evidence": "SN78951",
+    "serial_match": false,
+    "amount_inr": 10300.2,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-09-02T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 79,
+      "order_consistency": 71,
+      "evidence_authenticity": 74,
+      "claim_consistency": 77,
+      "customer_history_score": 70
+    },
+    "overall_confidence": 75,
+    "risk_level": "Medium",
+    "decision": "VERIFY",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 8,
+      "successful_orders": 6,
+      "previous_refunds": 2,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.25
+    },
+    "archetype": "legitimate_medium"
+  },
+  {
+    "refund_id": "RF-74087",
+    "order_id": "ORD-82087",
+    "customer_id": "cust_r087",
+    "customer_display": "William Lanka",
+    "customer_email_masked": "wil***@gmail.com",
+    "customer_phone_masked": "+91-93389127XX",
+    "product_name": "Laptop Stand",
+    "product_sku": "LS-112",
+    "product_category": "Accessories",
+    "serial_number_order": "SN27486",
+    "serial_number_evidence": "SN15811",
+    "serial_match": false,
+    "amount_inr": 4374.76,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-26T08:00:00+05:30",
+    "refund_requested_at": "2026-09-01T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 36,
+      "order_consistency": 37,
+      "evidence_authenticity": 25,
+      "claim_consistency": 56,
+      "customer_history_score": 55
+    },
+    "overall_confidence": 40,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low"
+    ],
+    "customer_history": {
+      "total_orders": 12,
+      "successful_orders": 2,
+      "previous_refunds": 9,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.75
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74088",
+    "order_id": "ORD-82088",
+    "customer_id": "cust_r088",
+    "customer_display": "Karan Mital",
+    "customer_email_masked": "kar***@outlook.com",
+    "customer_phone_masked": "+91-91626593XX",
+    "product_name": "USB-C Hub",
+    "product_sku": "UC-883",
+    "product_category": "Accessories",
+    "serial_number_order": "SN36144",
+    "serial_number_evidence": "SN36144",
+    "serial_match": true,
+    "amount_inr": 1516.77,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-23T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 88,
+      "order_consistency": 90,
+      "evidence_authenticity": 91,
+      "claim_consistency": 94,
+      "customer_history_score": 94
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 25,
+      "successful_orders": 17,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74089",
+    "order_id": "ORD-82089",
+    "customer_id": "cust_r089",
+    "customer_display": "Diya Bora",
+    "customer_email_masked": "diy***@yahoo.in",
+    "customer_phone_masked": "+91-96564020XX",
+    "product_name": "Bluetooth Speaker",
+    "product_sku": "BS-774",
+    "product_category": "Electronics",
+    "serial_number_order": "SN62431",
+    "serial_number_evidence": "SN67637",
+    "serial_match": false,
+    "amount_inr": 2741.65,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-18T08:00:00+05:30",
+    "refund_requested_at": "2026-08-25T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 37,
+      "order_consistency": 30,
+      "evidence_authenticity": 20,
+      "claim_consistency": 45,
+      "customer_history_score": 57
+    },
+    "overall_confidence": 35,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 8,
+      "previous_refunds": 6,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.4
+    },
+    "archetype": "suspicious_low"
+  },
+  {
+    "refund_id": "RF-74090",
+    "order_id": "ORD-82090",
+    "customer_id": "cust_r090",
+    "customer_display": "Tara Chaudhry",
+    "customer_email_masked": "tar***@outlook.com",
+    "customer_phone_masked": "+91-96860615XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN20494",
+    "serial_number_evidence": "SN52981",
+    "serial_match": false,
+    "amount_inr": 8635.64,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-21T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 61,
+      "order_consistency": 47,
+      "evidence_authenticity": 19,
+      "claim_consistency": 49,
+      "customer_history_score": 49
+    },
+    "overall_confidence": 46,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 10,
+      "successful_orders": 2,
+      "previous_refunds": 7,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.7
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74091",
+    "order_id": "ORD-82091",
+    "customer_id": "cust_r091",
+    "customer_display": "Tanay Toor",
+    "customer_email_masked": "tan***@outlook.com",
+    "customer_phone_masked": "+91-91456126XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN97973",
+    "serial_number_evidence": "SN97973",
+    "serial_match": true,
+    "amount_inr": 4842.78,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-28T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 98,
+      "order_consistency": 91,
+      "evidence_authenticity": 93,
+      "claim_consistency": 94,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 95,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 15,
+      "successful_orders": 9,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74092",
+    "order_id": "ORD-82092",
+    "customer_id": "cust_r092",
+    "customer_display": "Kevin Palla",
+    "customer_email_masked": "kev***@yahoo.in",
+    "customer_phone_masked": "+91-95120793XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN60181",
+    "serial_number_evidence": "SN60181",
+    "serial_match": true,
+    "amount_inr": 11898.22,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-18T08:00:00+05:30",
+    "refund_requested_at": "2026-08-24T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 97,
+      "order_consistency": 85,
+      "evidence_authenticity": 86,
+      "claim_consistency": 96,
+      "customer_history_score": 95
+    },
+    "overall_confidence": 91,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 21,
+      "successful_orders": 23,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.05
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74093",
+    "order_id": "ORD-82093",
+    "customer_id": "cust_r093",
+    "customer_display": "Yash Pingle",
+    "customer_email_masked": "yas***@yahoo.in",
+    "customer_phone_masked": "+91-92779019XX",
+    "product_name": "Fitness Band",
+    "product_sku": "FB-338",
+    "product_category": "Wearables",
+    "serial_number_order": "SN75410",
+    "serial_number_evidence": "SN75410",
+    "serial_match": true,
+    "amount_inr": 14446.28,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-29T08:00:00+05:30",
+    "refund_requested_at": "2026-09-01T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 96,
+      "order_consistency": 91,
+      "evidence_authenticity": 85,
+      "claim_consistency": 90,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 24,
+      "successful_orders": 15,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74094",
+    "order_id": "ORD-82094",
+    "customer_id": "cust_r094",
+    "customer_display": "Nakul Sarma",
+    "customer_email_masked": "nak***@outlook.com",
+    "customer_phone_masked": "+91-95738175XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN99381",
+    "serial_number_evidence": "SN99381",
+    "serial_match": true,
+    "amount_inr": 13580.51,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-15T08:00:00+05:30",
+    "refund_requested_at": "2026-08-17T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 93,
+      "order_consistency": 95,
+      "evidence_authenticity": 93,
+      "claim_consistency": 97,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 94,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 19,
+      "successful_orders": 18,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74095",
+    "order_id": "ORD-82095",
+    "customer_id": "cust_r095",
+    "customer_display": "Abhiram Mistry",
+    "customer_email_masked": "abh***@outlook.com",
+    "customer_phone_masked": "+91-97890362XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN74752",
+    "serial_number_evidence": "SN74752",
+    "serial_match": true,
+    "amount_inr": 14790.86,
+    "refund_reason": "WRONG_PRODUCT",
+    "order_date": "2026-08-25T08:00:00+05:30",
+    "refund_requested_at": "2026-08-29T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 88,
+      "order_consistency": 90,
+      "evidence_authenticity": 93,
+      "claim_consistency": 93,
+      "customer_history_score": 100
+    },
+    "overall_confidence": 92,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 14,
+      "successful_orders": 11,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.04
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74096",
+    "order_id": "ORD-82096",
+    "customer_id": "cust_r096",
+    "customer_display": "Krish Lalla",
+    "customer_email_masked": "kri***@outlook.com",
+    "customer_phone_masked": "+91-97591117XX",
+    "product_name": "Noise Cancelling Earbuds",
+    "product_sku": "NB-219",
+    "product_category": "Electronics",
+    "serial_number_order": "SN68979",
+    "serial_number_evidence": "SN71057",
+    "serial_match": false,
+    "amount_inr": 2753.57,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-21T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 61,
+      "order_consistency": 54,
+      "evidence_authenticity": 21,
+      "claim_consistency": 39,
+      "customer_history_score": 58
+    },
+    "overall_confidence": 47,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Evidence similarity to prior claim: 96.4%",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 13,
+      "successful_orders": 3,
+      "previous_refunds": 9,
+      "previous_disputes": 1,
+      "chargeback_count": 0,
+      "refund_rate": 0.69
+    },
+    "archetype": "reused_evidence"
+  },
+  {
+    "refund_id": "RF-74097",
+    "order_id": "ORD-82097",
+    "customer_id": "cust_r097",
+    "customer_display": "Hredhaan Dugal",
+    "customer_email_masked": "hre***@yahoo.in",
+    "customer_phone_masked": "+91-97587392XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN39552",
+    "serial_number_evidence": "SN39552",
+    "serial_match": true,
+    "amount_inr": 5256.74,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-24T08:00:00+05:30",
+    "refund_requested_at": "2026-08-30T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 93,
+      "order_consistency": 93,
+      "evidence_authenticity": 91,
+      "claim_consistency": 99,
+      "customer_history_score": 89
+    },
+    "overall_confidence": 93,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 16,
+      "successful_orders": 17,
+      "previous_refunds": 0,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.06
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74098",
+    "order_id": "ORD-82098",
+    "customer_id": "cust_r098",
+    "customer_display": "Baghyawati Kade",
+    "customer_email_masked": "bag***@outlook.com",
+    "customer_phone_masked": "+91-94959671XX",
+    "product_name": "Smart Watch",
+    "product_sku": "SW-091",
+    "product_category": "Electronics",
+    "serial_number_order": "SN13718",
+    "serial_number_evidence": "SN13718",
+    "serial_match": true,
+    "amount_inr": 3395.81,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-19T08:00:00+05:30",
+    "refund_requested_at": "2026-08-20T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      },
+      {
+        "type": "video",
+        "label": "product_video.mp4"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 89,
+      "order_consistency": 85,
+      "evidence_authenticity": 90,
+      "claim_consistency": 96,
+      "customer_history_score": 91
+    },
+    "overall_confidence": 90,
+    "risk_level": "Low",
+    "decision": "APPROVED",
+    "flags": [],
+    "customer_history": {
+      "total_orders": 23,
+      "successful_orders": 9,
+      "previous_refunds": 1,
+      "previous_disputes": 0,
+      "chargeback_count": 0,
+      "refund_rate": 0.07
+    },
+    "archetype": "legitimate_high"
+  },
+  {
+    "refund_id": "RF-74099",
+    "order_id": "ORD-82099",
+    "customer_id": "cust_r099",
+    "customer_display": "Samar Lalla",
+    "customer_email_masked": "sam***@outlook.com",
+    "customer_phone_masked": "+91-95526861XX",
+    "product_name": "Mechanical Keyboard",
+    "product_sku": "MK-556",
+    "product_category": "Accessories",
+    "serial_number_order": "SN30719",
+    "serial_number_evidence": "SN67619",
+    "serial_match": false,
+    "amount_inr": 5163.07,
+    "refund_reason": "PRODUCT_DAMAGED",
+    "order_date": "2026-08-27T08:00:00+05:30",
+    "refund_requested_at": "2026-08-28T08:00:00+05:30",
+    "evidence_submitted": [
+      {
+        "type": "photo",
+        "label": "damage_photo_1.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_2.jpg"
+      },
+      {
+        "type": "photo",
+        "label": "damage_photo_3.jpg"
+      }
+    ],
+    "evidence_scores": {
+      "product_match": 38,
+      "order_consistency": 35,
+      "evidence_authenticity": 29,
+      "claim_consistency": 36,
+      "customer_history_score": 45
+    },
+    "overall_confidence": 36,
+    "risk_level": "High",
+    "decision": "MANUAL_REVIEW",
+    "flags": [
+      "\u26a0 Possible product mismatch",
+      "\u26a0 Serial number mismatch detected",
+      "\u26a0 Evidence authenticity signals low",
+      "\u26a0 Damage claim inconsistent with product"
+    ],
+    "customer_history": {
+      "total_orders": 11,
+      "successful_orders": 5,
+      "previous_refunds": 5,
+      "previous_disputes": 3,
+      "chargeback_count": 1,
+      "refund_rate": 0.45
+    },
+    "archetype": "suspicious_low"
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "total_events": 308,
+    "total_customers": 308,
+    "total_amount_inr": 972484.04,
+    "retry_cost_assumption_inr_per_attempt": 2.0
+  },
+  "overall_accuracy": 0.9833,
+  "confusion_matrix": {
+    "WAIT": {
+      "WAIT": 30,
+      "STOP": 0,
+      "REAUTHORIZE": 0,
+      "ESCALATE": 0,
+      "RECOVER": 0
+    },
+    "STOP": {
+      "WAIT": 0,
+      "STOP": 69,
+      "REAUTHORIZE": 0,
+      "ESCALATE": 0,
+      "RECOVER": 0
+    },
+    "REAUTHORIZE": {
+      "WAIT": 0,
+      "STOP": 0,
+      "REAUTHORIZE": 36,
+      "ESCALATE": 0,
+      "RECOVER": 0
+    },
+    "ESCALATE": {
+      "WAIT": 4,
+      "STOP": 1,
+      "REAUTHORIZE": 0,
+      "ESCALATE": 25,
+      "RECOVER": 0
+    },
+    "RECOVER": {
+      "WAIT": 0,
+      "STOP": 0,
+      "REAUTHORIZE": 0,
+      "ESCALATE": 0,
+      "RECOVER": 135
+    }
+  },
+  "branch_metrics": {
+    "WAIT": {
+      "tp": 30,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.8824,
+      "recall": 1.0,
+      "f1": 0.9375
+    },
+    "STOP": {
+      "tp": 69,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9857,
+      "recall": 1.0,
+      "f1": 0.9928
+    },
+    "REAUTHORIZE": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ESCALATE": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091
+    },
+    "RECOVER": {
+      "tp": 135,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "amount_by_branch": {
+    "RECOVER": 413723.96,
+    "REAUTHORIZE": 107348.09,
+    "STOP": 236897.49,
+    "WAIT": 134634.79,
+    "ESCALATE": 79879.71
+  },
+  "count_by_branch": {
+    "RECOVER": 138,
+    "REAUTHORIZE": 37,
+    "STOP": 72,
+    "WAIT": 36,
+    "ESCALATE": 25
+  },
+  "ground_truth_distribution": {
+    "RECOVER": 135,
+    "REAUTHORIZE": 36,
+    "STOP": 69,
+    "WAIT": 30,
+    "ESCALATE": 30
+  },
+  "retries_avoided": {
+    "total": 134,
+    "by_branch": {
+      "RECOVER": 0,
+      "REAUTHORIZE": 37,
+      "STOP": 72,
+      "WAIT": 0,
+      "ESCALATE": 25
+    },
+    "estimated_inr_saved": 268.0,
+    "cost_assumption": "\u20b92.0 per gateway retry attempt"
+  },
+  "recover_timing_analysis": {
+    "total_recover_events": 138,
+    "timing_improved_count": 135,
+    "timing_improved_pct": 97.8
+  },
+  "sample_recover_event": {
+    "event_id": "evt_cust_0001_014",
+    "customer_id": "cust_0001",
+    "amount_inr": 3634.66,
+    "failure_code": "Z9",
+    "failure_timestamp": "2026-08-14T08:00:00+05:30",
+    "historical_success_days_of_month": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "retry_dates": [
+      "2026-10-02T08:00:00+05:30",
+      "2026-09-03T08:00:00+05:30"
+    ],
+    "probability_curve": {
+      "1": 0.1474,
+      "2": 0.1992,
+      "3": 0.2134,
+      "4": 0.1992,
+      "5": 0.1474,
+      "6": 0.0713,
+      "7": 0.0193,
+      "8": 0.0027,
+      "9": 0.0002,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.0,
+      "23": 0.0,
+      "24": 0.0,
+      "25": 0.0,
+      "26": 0.0,
+      "27": 0.0,
+      "28": 0.0
+    },
+    "explanation": "Classified as RECOVER: customer has 13/14 successful cycles historically (success rate 93%), clustering on days [1, 2, 3, 4, 5]. Current failure (code Z9) occurred outside that window. Retry scheduled for customer's known success window rather than immediately \u2014 aligning to observed salary-credit patterns for \u20b93,634.66."
+  }
+}

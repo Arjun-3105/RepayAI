@@ -1,0 +1,410 @@
+{
+  "source": "razorpay_live_test",
+  "fetched_at": "2026-09-04T01:46:09.340633+05:30",
+  "key_id_prefix": "rzp_test_TXf...",
+  "mode": "test",
+  "live_counts": {
+    "orders": 1,
+    "customers": 15,
+    "payments": 0,
+    "refunds": 0
+  },
+  "seeded_counts": {
+    "archetypes": 15,
+    "failed": 7,
+    "refund_requests": 3
+  },
+  "amounts_inr": {
+    "total": 56685,
+    "recovered": 28292,
+    "at_risk": 28393,
+    "refund_requests": 12997
+  },
+  "enriched_orders": [
+    {
+      "razorpay_order_id": "order_TXgzvvdCx8bL4b",
+      "customer_name": "Kiran Sharma",
+      "plan": "SIP Monthly",
+      "amount_inr": 999,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": true,
+      "created_at": 1788466559
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0001",
+      "customer_name": "Rohan Mehta",
+      "plan": "OTT Bundle",
+      "amount_inr": 2499,
+      "status": "failed",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1788380169
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0002",
+      "customer_name": "Priya Nair",
+      "plan": "Gym Annual",
+      "amount_inr": 1499,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1788293769
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0003",
+      "customer_name": "Arjun Kapoor",
+      "plan": "EdTech Pro",
+      "amount_inr": 4999,
+      "status": "failed",
+      "has_refund_request": true,
+      "is_live": false,
+      "created_at": 1788207369
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0004",
+      "customer_name": "Sneha Iyer",
+      "plan": "News Premium",
+      "amount_inr": 799,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1788120969
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0005",
+      "customer_name": "Vikram Singh",
+      "plan": "Cloud Backup",
+      "amount_inr": 3499,
+      "status": "failed",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1788034569
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0006",
+      "customer_name": "Anjali Sharma",
+      "plan": "Fitness Tracker",
+      "amount_inr": 1299,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787948169
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0007",
+      "customer_name": "Rahul Gupta",
+      "plan": "Insurance EMI",
+      "amount_inr": 5999,
+      "status": "failed",
+      "has_refund_request": true,
+      "is_live": false,
+      "created_at": 1787861769
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0008",
+      "customer_name": "Meera Pillai",
+      "plan": "Magazine Bundle",
+      "amount_inr": 699,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787775369
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0009",
+      "customer_name": "Suresh Babu",
+      "plan": "Loan EMI",
+      "amount_inr": 8999,
+      "status": "failed",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787688969
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0010",
+      "customer_name": "Divya Krishnan",
+      "plan": "Electricity AutoPay",
+      "amount_inr": 2999,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787602569
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0011",
+      "customer_name": "Amit Joshi",
+      "plan": "Credit Card EMI",
+      "amount_inr": 1999,
+      "status": "failed",
+      "has_refund_request": true,
+      "is_live": false,
+      "created_at": 1787516169
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0012",
+      "customer_name": "Pooja Menon",
+      "plan": "Home Loan EMI",
+      "amount_inr": 14999,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787429769
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0013",
+      "customer_name": "Rajesh Patel",
+      "plan": "App Subscription",
+      "amount_inr": 399,
+      "status": "failed",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787343369
+    },
+    {
+      "razorpay_order_id": "ord_simulated_0014",
+      "customer_name": "Sita Reddy",
+      "plan": "MF SIP",
+      "amount_inr": 4999,
+      "status": "paid",
+      "has_refund_request": false,
+      "is_live": false,
+      "created_at": 1787256969
+    }
+  ],
+  "live_orders": [
+    {
+      "id": "order_TXgzvvdCx8bL4b",
+      "entity": "order",
+      "amount": 99900,
+      "amount_paid": null,
+      "amount_due": 99900,
+      "currency": "INR",
+      "receipt": "rcpt_456781",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": {
+        "customer_name": "Kiran Sharma",
+        "plan": "SIP Monthly",
+        "customer_id": "cust_TXgzvkiQbWOIH3",
+        "source": "RecoverOS-demo"
+      },
+      "created_at": 1788466559
+    }
+  ],
+  "live_customers": [
+    {
+      "id": "cust_TXh059z27q0ya8",
+      "entity": "customer",
+      "name": "Sita Reddy",
+      "email": "sita.red@yahoo.in",
+      "contact": "9689012345",
+      "gstin": null,
+      "notes": {
+        "plan": "MF SIP",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466567
+    },
+    {
+      "id": "cust_TXh03tJ7fVUWns",
+      "entity": "customer",
+      "name": "Pooja Menon",
+      "email": "pooja.men@gmail.com",
+      "contact": "9467890123",
+      "gstin": null,
+      "notes": {
+        "plan": "Home Loan EMI",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466566
+    },
+    {
+      "id": "cust_TXh04WChzNpoCA",
+      "entity": "customer",
+      "name": "Rajesh Patel",
+      "email": "rajesh.pa@gmail.com",
+      "contact": "9578901234",
+      "gstin": null,
+      "notes": {
+        "plan": "App Subscription",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466566
+    },
+    {
+      "id": "cust_TXh02dZIxQG3WI",
+      "entity": "customer",
+      "name": "Divya Krishnan",
+      "email": "divya.kri@gmail.com",
+      "contact": "9245678901",
+      "gstin": null,
+      "notes": {
+        "plan": "Electricity AutoPay",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466565
+    },
+    {
+      "id": "cust_TXh03Hw6KHXWgT",
+      "entity": "customer",
+      "name": "Amit Joshi",
+      "email": "amit.jos@outlook.com",
+      "contact": "9356789012",
+      "gstin": null,
+      "notes": {
+        "plan": "Credit Card EMI",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466565
+    },
+    {
+      "id": "cust_TXh01uYfXSjhMi",
+      "entity": "customer",
+      "name": "Suresh Babu",
+      "email": "suresh.ba@gmail.com",
+      "contact": "9134567890",
+      "gstin": null,
+      "notes": {
+        "plan": "Loan EMI",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466564
+    },
+    {
+      "id": "cust_TXh00WGnFn6tfi",
+      "entity": "customer",
+      "name": "Rahul Gupta",
+      "email": "rahul.gup@gmail.com",
+      "contact": "9812345678",
+      "gstin": null,
+      "notes": {
+        "plan": "Insurance EMI",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466563
+    },
+    {
+      "id": "cust_TXh01Cq39UZWeo",
+      "entity": "customer",
+      "name": "Meera Pillai",
+      "email": "meera.pil@yahoo.in",
+      "contact": "9023456789",
+      "gstin": null,
+      "notes": {
+        "plan": "Magazine Bundle",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466563
+    },
+    {
+      "id": "cust_TXgzzB7zGD2JIK",
+      "entity": "customer",
+      "name": "Vikram Singh",
+      "email": "vikram.si@gmail.com",
+      "contact": "9678123456",
+      "gstin": null,
+      "notes": {
+        "plan": "Cloud Backup",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466562
+    },
+    {
+      "id": "cust_TXgzztXUlcU53h",
+      "entity": "customer",
+      "name": "Anjali Sharma",
+      "email": "anjali.sh@gmail.com",
+      "contact": "9781234567",
+      "gstin": null,
+      "notes": {
+        "plan": "Fitness Tracker",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466562
+    },
+    {
+      "id": "cust_TXgzyWNvgdByyN",
+      "entity": "customer",
+      "name": "Sneha Iyer",
+      "email": "sneha.iye@gmail.com",
+      "contact": "9567812345",
+      "gstin": null,
+      "notes": {
+        "plan": "News Premium",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466561
+    },
+    {
+      "id": "cust_TXgzx90WlbpI8j",
+      "entity": "customer",
+      "name": "Priya Nair",
+      "email": "priya.nai@yahoo.in",
+      "contact": "9345678123",
+      "gstin": null,
+      "notes": {
+        "plan": "Gym Annual",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466560
+    },
+    {
+      "id": "cust_TXgzxqRvLMCxzI",
+      "entity": "customer",
+      "name": "Arjun Kapoor",
+      "email": "arjun.kap@outlook.com",
+      "contact": "9456781234",
+      "gstin": null,
+      "notes": {
+        "plan": "EdTech Pro",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466560
+    },
+    {
+      "id": "cust_TXgzwSTfOqNvvm",
+      "entity": "customer",
+      "name": "Rohan Mehta",
+      "email": "rohan.meh@gmail.com",
+      "contact": "9234567812",
+      "gstin": null,
+      "notes": {
+        "plan": "OTT Bundle",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466559
+    },
+    {
+      "id": "cust_TXgzvkiQbWOIH3",
+      "entity": "customer",
+      "name": "Kiran Sharma",
+      "email": "kiran.sha@gmail.com",
+      "contact": "9123456781",
+      "gstin": null,
+      "notes": {
+        "plan": "SIP Monthly",
+        "source": "RecoverOS-demo"
+      },
+      "shipping_address": [],
+      "created_at": 1788466558
+    }
+  ],
+  "live_payments": [],
+  "live_refunds": []
+}
