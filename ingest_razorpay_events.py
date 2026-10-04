@@ -70,59 +70,25 @@ from action_simulator import simulate_batch
 actions = simulate_batch(normalized, classifications)
 
 
-# ── 5. Generate explanations (template mode — no LLM cost) ────────────────
-def template_explanation(event, clf):
-    branch  = clf["branch"]
-    fc      = event.get("failure_code", "")
-    amount  = event.get("amount_inr", 0)
-    cat     = event.get("mandate_category", "")
-    cust_id = event.get("customer_id", "")
-    hist    = event.get("customer_payment_history", {})
-    days    = hist.get("historical_success_days_of_month", [])
-    consec  = hist.get("consecutive_failures", 0)
+# ── 5. Generate explanations (OpenRouter LLM mode) ───────────────────────
+from dotenv import load_dotenv
+load_dotenv()
+from llm_explainer import generate_explanation
 
-    # Razorpay-specific enrichment
-    rzp = event.get("razorpay", {})
-    order_id = rzp.get("order_id", "")
-
-    base = f"[Razorpay test-mode · {order_id}] "
-
-    if branch == "RECOVER":
-        return (base + f"Classified as RECOVER: {cat} mandate for {cust_id}. "
-                f"Failure code {fc} — insufficient funds on this date. "
-                f"Customer's historical success window: days {days}. "
-                f"Retry scheduled for peak salary-credit day, not immediately. "
-                f"₹{amount:,.2f} recoverable with timing intelligence.")
-    elif branch == "WAIT":
-        delay = "30 minutes" if fc == "U69" else "4 hours"
-        return (base + f"Classified as WAIT: failure code {fc} indicates bank/PSP infrastructure issue "
-                f"(not customer's fault). Auto-retry in {delay} — no customer contact. "
-                f"₹{amount:,.2f} at risk pending infrastructure recovery.")
-    elif branch == "STOP":
-        return (base + f"Classified as STOP: "
-                + ("account closed or blocked — no retry possible." if fc in {"01","02","07"}
-                   else f"{consec} consecutive Z9 failures indicate structural affordability issue. ")
-                + f" Retries halted — each saved retry = ₹2 gateway cost avoided. "
-                  f"₹{amount:,.2f} flagged for merchant dashboard review.")
-    elif branch == "REAUTHORIZE":
-        return (base + f"Classified as REAUTHORIZE: failure code {fc} — customer revoked/paused mandate. "
-                f"Payment of ₹{amount:,.2f} may be collectible once mandate is reactivated. "
-                f"Hinglish re-auth WhatsApp message dispatched (1-tap link, not a retry).")
-    else:  # ESCALATE
-        codes = event.get("customer_risk_signals", {}).get("distinct_failure_codes_last_90d", [])
-        return (base + f"Classified as ESCALATE: {len(codes)} distinct failure codes in 90 days. "
-                f"Erratic pattern — no autonomous action taken. "
-                f"₹{amount:,.2f} flagged to merchant exception queue for human review.")
-
-
-explanations = [
-    {
+explanations = []
+print("  Generating live OpenRouter LLM explanations for Razorpay events...")
+for e, clf in zip(normalized, classifications):
+    res = generate_explanation(e, clf["branch"], clf.get("rationale", ""), use_llm=True)
+    order_id = e.get("razorpay", {}).get("order_id", "")
+    prefix = f"[Razorpay test-mode · {order_id}] "
+    explanations.append({
         "event_id": e["event_id"],
-        "explanation": template_explanation(e, clf),
-        "explanation_source": "razorpay_live_template",
-    }
-    for e, clf in zip(normalized, classifications)
-]
+        "explanation": prefix + res["explanation"],
+        "explanation_source": f"razorpay_live_{res['explanation_source']}",
+    })
+    print(f"   ✓ {e['event_id']} → {res['explanation_source']}")
+    import time
+    time.sleep(3.2)  # Respect OpenRouter 20 req/min free limit
 
 
 # ── 6. Build audit records ─────────────────────────────────────────────────

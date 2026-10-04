@@ -1,240 +1,250 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Outfit', 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-orbitron: 'Orbitron', monospace, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
-  --color-bg-base: #06080f;
-  --color-bg-card: #0c1020;
-  --color-bg-card-hover: #111827;
-  --color-bg-sidebar: #080b14;
-  --color-bg-input: #0d1422;
+  --color-bg-root: #040507;
+  --color-bg-subtle: #08090d;
+  --color-bg-panel: #0d0e14;
+  --color-bg-card: #11131a;
 
-  --color-border-subtle: rgba(255,255,255,0.06);
-  --color-border-default: rgba(255,255,255,0.10);
-  --color-border-strong: rgba(255,255,255,0.18);
+  --color-border-hairline: rgba(255, 255, 255, 0.07);
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-border-active: rgba(255, 255, 255, 0.22);
 
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #4b5a6e;
-
-  --color-accent-cyan: #22d3ee;
-  --color-accent-blue: #3b82f6;
-  --color-accent-purple: #a855f7;
-  --color-accent-emerald: #10b981;
-  --color-accent-rose: #f43f5e;
-  --color-accent-amber: #f59e0b;
-
-  --color-branch-recover: #10b981;
-  --color-branch-wait: #3b82f6;
-  --color-branch-reauth: #a855f7;
-  --color-branch-stop: #f43f5e;
-  --color-branch-escalate: #f59e0b;
+  --color-foreground: #f4f4f7;
+  --color-foreground-muted: #9496a1;
+  --color-foreground-dim: #636573;
 }
 
 @layer base {
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; color-scheme: dark; }
-
-  body {
-    background: #06080f;
-    color: #f1f5f9;
-    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-    height: 100vh;
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
-  ::-webkit-scrollbar { width: 4px; height: 4px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
-  ::-webkit-scrollbar-thumb:hover { background: #334155; }
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #040507;
+  }
+
+  body {
+    background-color: #040507;
+    color: #f4f4f7;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #040507;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #20222b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333644;
+  }
 }
 
 @layer components {
-  /* ── Keyframe animations ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-12px); }
-    to   { opacity: 1; transform: translateX(0); }
-  }
-  @keyframes pulse-glow {
-    0%, 100% { opacity: 0.6; }
-    50%       { opacity: 1; }
-  }
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-  @keyframes shimmer {
-    from { background-position: -200% 0; }
-    to   { background-position: 200% 0; }
-  }
-
-  .animate-fade-up   { animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .animate-slide-in  { animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .animate-pulse-glow { animation: pulse-glow 2.5s ease-in-out infinite; }
-  .animate-spin-slow { animation: spin 0.8s linear infinite; }
-
-  /* ── Card surfaces ── */
-  .card {
-    background: #0c1020;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-  }
-  .card:hover {
-    border-color: rgba(255,255,255,0.15);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-  }
-
-  .card-glow-emerald:hover { border-color: rgba(16,185,129,0.35); box-shadow: 0 0 28px rgba(16,185,129,0.12); }
-  .card-glow-blue:hover    { border-color: rgba(59,130,246,0.35);  box-shadow: 0 0 28px rgba(59,130,246,0.12); }
-  .card-glow-purple:hover  { border-color: rgba(168,85,247,0.35);  box-shadow: 0 0 28px rgba(168,85,247,0.12); }
-  .card-glow-rose:hover    { border-color: rgba(244,63,94,0.35);   box-shadow: 0 0 28px rgba(244,63,94,0.12); }
-  .card-glow-amber:hover   { border-color: rgba(245,158,11,0.35);  box-shadow: 0 0 28px rgba(245,158,11,0.12); }
-
-  /* ── Branch pills ── */
-  .pill { display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; white-space: nowrap; }
-  .pill-recover   { background: rgba(16,185,129,.18);  color: #34d399; border: 1px solid rgba(16,185,129,.3); }
-  .pill-wait      { background: rgba(59,130,246,.18);  color: #60a5fa; border: 1px solid rgba(59,130,246,.3); }
-  .pill-reauth    { background: rgba(168,85,247,.18);  color: #c084fc; border: 1px solid rgba(168,85,247,.3); }
-  .pill-stop      { background: rgba(244,63,94,.18);   color: #fb7185; border: 1px solid rgba(244,63,94,.3); }
-  .pill-escalate  { background: rgba(245,158,11,.18);  color: #fbbf24; border: 1px solid rgba(245,158,11,.3); }
-
-  /* ── Buttons ── */
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 8px 18px; border-radius: 10px; border: none;
-    font-family: inherit; font-size: 13px; font-weight: 600;
-    cursor: pointer; transition: all 0.18s ease; outline: none;
-  }
-  .btn-primary {
-    background: linear-gradient(135deg, #0ea5e9, #3b82f6);
-    color: #fff;
-    box-shadow: 0 4px 16px rgba(59,130,246,0.35);
-  }
-  .btn-primary:hover { box-shadow: 0 6px 22px rgba(59,130,246,0.5); transform: translateY(-1px); }
-  .btn-ghost {
-    background: rgba(255,255,255,0.05); color: #94a3b8;
-    border: 1px solid rgba(255,255,255,0.1);
-  }
-  .btn-ghost:hover { background: rgba(255,255,255,0.1); color: #f1f5f9; }
-
-  /* ── Inputs ── */
-  .input {
-    background: #0d1422; border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px; padding: 8px 12px; color: #f1f5f9;
-    font-family: inherit; font-size: 13px; outline: none;
-    transition: border-color 0.18s;
-  }
-  .input:focus { border-color: #22d3ee; }
-  .input::placeholder { color: #4b5a6e; }
-
-  /* ── Select ── */
-  .select {
-    background: #0d1422; border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px; padding: 8px 12px; color: #f1f5f9;
-    font-family: inherit; font-size: 13px; outline: none;
-    cursor: pointer; transition: border-color 0.18s;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    padding-right: 32px;
-  }
-  .select:focus { border-color: #22d3ee; }
-
-  /* ── Recharts custom tooltip ── */
-  .rc-tooltip {
-    background: rgba(12,16,32,0.98) !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-    border-radius: 12px !important;
-    padding: 10px 14px !important;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-  }
-
-  /* ── Sidebar nav items ── */
-  .nav-item {
-    display: flex; align-items: center; gap: 10px;
-    padding: 9px 12px; border-radius: 10px; cursor: pointer;
-    font-size: 13px; font-weight: 500; color: #64748b;
-    transition: all 0.18s; border: none; background: none;
-    width: 100%; text-align: left; font-family: inherit;
-  }
-  .nav-item:hover { background: rgba(255,255,255,0.06); color: #f1f5f9; }
-  .nav-item.active { background: rgba(34,211,238,0.1); color: #22d3ee; border-left: 2px solid #22d3ee; padding-left: 10px; }
-
-  /* ── Progress bar ── */
-  .progress-track { height: 4px; background: rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; }
-  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
-
-  /* ── Ambient background radial glows ── */
-  .radial-glow-top-left::before {
-    content: '';
-    position: fixed; top: -120px; left: -120px;
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);
-    pointer-events: none; z-index: 0;
-  }
-  .radial-glow-top-right::after {
-    content: '';
-    position: fixed; top: -120px; right: -120px;
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(168,85,247,0.06) 0%, transparent 70%);
-    pointer-events: none; z-index: 0;
-  }
-
-  /* ── Grid mesh ── */
-  .mesh-grid {
-    background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-
-  /* ── Modal ── */
-  .modal-overlay {
-    position: fixed; inset: 0; z-index: 50;
-    background: rgba(4,7,18,0.85);
-    backdrop-filter: blur(14px);
-    display: flex; align-items: center; justify-content: center; padding: 20px;
-  }
-  .modal-panel {
-    background: #0c1020;
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 20px;
-    box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(34,211,238,0.08);
-    max-height: 90vh; overflow-y: auto;
-  }
-
-  /* ── Stat card KPI layout ── */
-  .kpi-card {
-    background: #0c1020;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    padding: 20px;
+  /* ── Ultra-Luxe Glassmorphism Card (Stripe / Vercel Enterprise tier) ── */
+  .luxe-card {
     position: relative;
-    overflow: hidden;
-    transition: all 0.22s ease;
+    background: linear-gradient(180deg, rgba(14, 16, 22, 0.8) 0%, rgba(9, 10, 14, 0.92) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 20px 40px -20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .kpi-card::before {
+  .luxe-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.14), 0 24px 50px -20px rgba(0, 0, 0, 0.95);
+    transform: translateY(-1px);
+  }
+
+  /* ── Top-edge Specular Highlight line ── */
+  .specular-line {
+    position: relative;
+  }
+  .specular-line::before {
     content: '';
-    position: absolute; inset: 0; border-radius: 16px;
-    background: radial-gradient(circle at 80% 20%, var(--tw-gradient-from, transparent), transparent 60%);
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
     pointer-events: none;
   }
-  .kpi-card:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,0.4); }
 
-  /* ── Chip tag ── */
-  .chip {
-    display: inline-flex; align-items: center; gap: 5px;
-    padding: 3px 10px; border-radius: 99px;
-    font-size: 11px; font-weight: 600; letter-spacing: 0.3px;
+  /* ── Ambient Spotlight Backdrop ── */
+  .luxe-glow {
+    background: radial-gradient(50% 35% at 50% 0%, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
   }
-  .chip-live { background: rgba(16,185,129,.15); color: #34d399; border: 1px solid rgba(16,185,129,.25); }
-  .chip-info { background: rgba(34,211,238,.12); color: #22d3ee; border: 1px solid rgba(34,211,238,.22); }
+
+  .luxe-grid {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+
+  /* ── Border Beam Sweep (Vengeance UI Signature Animation) ── */
+  .border-beam-badge {
+    position: relative;
+    overflow: hidden;
+  }
+  .border-beam-badge::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(90deg, transparent 35%, rgba(255,255,255,0.7) 50%, transparent 65%);
+    background-size: 200% 100%;
+    animation: beam-sweep 4s linear infinite;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+  }
+  @keyframes beam-sweep {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* ── Executive Buttons ── */
+  .btn-luxe-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #040507;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border: 1px solid #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-luxe-primary:hover {
+    background: #e4e4e7;
+    box-shadow: 0 4px 16px rgba(255,255,255,0.18);
+    transform: translateY(-1px);
+  }
+  .btn-luxe-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-luxe-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.035);
+    color: #f4f4f7;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .btn-luxe-secondary:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+  .btn-luxe-secondary:active {
+    transform: scale(0.98);
+  }
+
+  /* ── Luxe Form Controls ── */
+  .luxe-input {
+    background: rgba(7, 8, 12, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #f4f4f7;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .luxe-input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15), inset 0 1px 2px rgba(0,0,0,0.4);
+  }
+
+  .luxe-select {
+    background: rgba(7, 8, 12, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 8px;
+    padding: 8px 28px 8px 12px;
+    color: #f4f4f7;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239496a1' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  .luxe-select:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* ── Precision Branch Badges ── */
+  .luxe-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .luxe-badge-recover   { background: rgba(16, 185, 129, 0.08); color: #34d399; border-color: rgba(16, 185, 129, 0.25); }
+  .luxe-badge-wait      { background: rgba(56, 189, 248, 0.08); color: #38bdf8; border-color: rgba(56, 189, 248, 0.25); }
+  .luxe-badge-reauth    { background: rgba(168, 85, 247, 0.08); color: #c084fc; border-color: rgba(168, 85, 247, 0.25); }
+  .luxe-badge-stop      { background: rgba(244, 63, 94, 0.08);  color: #fb7185; border-color: rgba(244, 63, 94, 0.25); }
+  .luxe-badge-escalate  { background: rgba(245, 158, 11, 0.08); color: #fbbf24; border-color: rgba(245, 158, 11, 0.25); }
+
+  /* ── Dark Frosted Recharts Tooltip ── */
+  .rc-tooltip {
+    background: rgba(10, 11, 16, 0.94) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(16px);
+  }
 }

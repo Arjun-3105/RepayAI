@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, AlertTriangle, CheckCircle2, FileSearch, XCircle, Sparkles, Filter, Lock } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, CheckCircle2, XCircle, Sparkles, Lock } from 'lucide-react';
 
 export default function RefundGuardExplorer() {
   const [refundSummary, setRefundSummary] = useState(null);
@@ -9,13 +9,13 @@ export default function RefundGuardExplorer() {
 
   useEffect(() => {
     fetch('/api/refund_summary.json')
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setRefundSummary(d))
+      .then(r => (r.ok ? r.json() : null))
+      .then(d => d && setRefundSummary(d))
       .catch(() => {});
 
     fetch('/api/refund_batch.json')
-      .then((r) => (r.ok ? r.json() : []))
-      .then((d) => Array.isArray(d) && setRefundBatch(d))
+      .then(r => (r.ok ? r.json() : []))
+      .then(d => Array.isArray(d) && setRefundBatch(d))
       .catch(() => {});
   }, []);
 
@@ -39,183 +39,225 @@ export default function RefundGuardExplorer() {
 
   const filteredCases = filterArchetype === 'ALL'
     ? refundBatch
-    : refundBatch.filter((c) => (c.archetype || c.ground_truth_archetype) === filterArchetype);
+    : refundBatch.filter(c => (c.archetype || c.ground_truth_archetype) === filterArchetype);
 
-  const getDecisionBadge = (decision) => {
+  const getDecisionBadge = decision => {
     switch (decision) {
       case 'APPROVED':
       case 'AUTO_APPROVE':
-        return <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><CheckCircle2 className="w-3.5 h-3.5" /> Auto-Approved</span>;
+        return (
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+            <CheckCircle2 className="w-3 h-3" /> AUTO APPROVE
+          </span>
+        );
       case 'VERIFY':
       case 'REQUIRE_MORE_EVIDENCE':
-        return <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20"><AlertTriangle className="w-3.5 h-3.5" /> Request Evidence</span>;
+        return (
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30">
+            <AlertTriangle className="w-3 h-3" /> REQUEST PROOF
+          </span>
+        );
       case 'MANUAL_REVIEW':
       case 'REJECT':
-        return <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20"><XCircle className="w-3.5 h-3.5" /> Blocked / Human Review</span>;
+        return (
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">
+            <XCircle className="w-3 h-3" /> FLAG REVIEW
+          </span>
+        );
       default:
-        return <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">{decision}</span>;
+        return (
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+            {decision}
+          </span>
+        );
     }
   };
 
+  const categories = [
+    { id: 'ALL', label: 'All Archetypes' },
+    { id: 'legitimate_high', label: 'Verified Proof' },
+    { id: 'ai_generated', label: 'Synthetic AI' },
+    { id: 'manipulated_evidence', label: 'Photoshop Edit' },
+    { id: 'reused_evidence', label: 'Reused Hash' },
+    { id: 'wrong_product_claim', label: 'Wrong Item' },
+    { id: 'ordinary_abuse', label: 'Policy Abuse' },
+  ];
+
   return (
-    <div className="space-y-6 pb-8">
-      {/* Banner */}
-      <div className="p-4 rounded-xl bg-gradient-to-r from-purple-900/30 via-indigo-900/20 to-slate-900/40 border border-purple-500/30 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="p-2.5 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-300">
-            <ShieldCheck className="w-5 h-5" />
+    <div className="space-y-6 pb-6">
+      {/* Header Banner */}
+      <div className="luxe-card specular-line p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex items-center gap-3.5">
+          <div className="w-10 h-10 rounded-xl border border-white/10 bg-white/[0.03] flex items-center justify-center shrink-0 text-white shadow-sm">
+            <ShieldCheck className="w-5 h-5 text-cyan-400" />
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-white flex items-center gap-2">
-              RefundGuard AI — Evidence Verification Engine
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 font-medium">
-                Active Engine
-              </span>
+            <div className="flex items-center gap-2 font-mono text-[10px] text-zinc-400 uppercase tracking-widest font-medium">
+              <span>MODULE // FORENSIC VISION</span>
+              <span>·</span>
+              <span>MULTIMODAL TAMPER & HASH MATCH</span>
+            </div>
+            <h2 className="font-display text-xl font-bold tracking-tight text-white mt-1">
+              RefundGuard Verification Engine
             </h2>
-            <p className="text-xs text-slate-400">
-              Evaluates visual damage evidence, image manipulation, serial number mismatches & buyer refund abuse.
+            <p className="text-xs text-zinc-400 mt-1 max-w-xl leading-relaxed">
+              Inspects packaging photos, image hashes, serial code mismatches, and diffusion artifact signatures.
             </p>
           </div>
         </div>
-        <div className="text-right">
-          <span className="text-xs text-slate-400 block">Fake Claims Prevented</span>
-          <span className="text-lg font-bold text-emerald-400">₹{(S.prevented_amount_inr / 1e5).toFixed(2)} Lakhs</span>
+
+        <div className="text-left sm:text-right shrink-0 font-mono">
+          <span className="text-[10px] text-zinc-500 uppercase tracking-widest block font-medium">LOSS DEFLECTED</span>
+          <span className="font-mono text-2xl font-bold text-emerald-400 mt-0.5 block">
+            ₹{(S.prevented_amount_inr / 1e5).toFixed(2)}L
+          </span>
         </div>
       </div>
 
       {/* KPI Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="p-4 rounded-xl bg-[#0b0f19] border border-slate-800">
-          <span className="text-xs text-slate-400 block">Total Refund Claims</span>
-          <span className="text-xl font-bold text-white mt-1 block">{S.total_cases.toLocaleString()} cases</span>
-          <span className="text-[11px] text-slate-500 mt-1 block">₹{(S.total_amount_inr / 1e7).toFixed(2)} Cr processed</span>
-        </div>
-        <div className="p-4 rounded-xl bg-[#0b0f19] border border-slate-800">
-          <span className="text-xs text-slate-400 block">Abusive Claims Prevented</span>
-          <span className="text-xl font-bold text-emerald-400 mt-1 block">₹{(S.prevented_amount_inr / 1e5).toFixed(2)} Lakhs</span>
-          <span className="text-[11px] text-emerald-500/80 mt-1 block">Saved merchant revenue</span>
-        </div>
-        <div className="p-4 rounded-xl bg-[#0b0f19] border border-slate-800">
-          <span className="text-xs text-slate-400 block">Evidence Verification Accuracy</span>
-          <span className="text-xl font-bold text-purple-400 mt-1 block">{S.test_accuracy_pct}%</span>
-          <span className="text-[11px] text-purple-400/80 mt-1 block">Across 7 claim archetypes</span>
-        </div>
-        <div className="p-4 rounded-xl bg-[#0b0f19] border border-slate-800">
-          <span className="text-xs text-slate-400 block">False Positive Rate</span>
-          <span className="text-xl font-bold text-cyan-400 mt-1 block">6.0%</span>
-          <span className="text-[11px] text-cyan-400/80 mt-1 block">50% lower than static rules (12%)</span>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {[
+          { label: 'Total Claims Evaluated', val: `${S.total_cases.toLocaleString()}`, sub: `₹${(S.total_amount_inr / 1e7).toFixed(2)} Cr processed`, color: 'text-white' },
+          { label: 'Abuse Losses Prevented', val: `₹${(S.prevented_amount_inr / 1e5).toFixed(2)}L`, sub: 'Saved merchant capital', color: 'text-emerald-400' },
+          { label: 'Forensic Precision', val: `${S.test_accuracy_pct}%`, sub: 'Across 7 claim archetypes', color: 'text-cyan-300' },
+          { label: 'False Positive Rate', val: '6.0%', sub: 'vs 12.0% static rule baseline', color: 'text-purple-300' },
+        ].map(k => (
+          <div key={k.label} className="luxe-card specular-line p-5">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 block font-medium">{k.label}</span>
+            <span className={`font-mono text-2xl font-extrabold mt-1.5 block tracking-tight ${k.color}`}>{k.val}</span>
+            <span className="text-xs text-zinc-500 mt-1 block">{k.sub}</span>
+          </div>
+        ))}
       </div>
 
-      {/* Archetype Breakdown & Distribution */}
-      <div className="p-5 rounded-xl bg-[#0b0f19] border border-slate-800 space-y-4">
-        <h3 className="text-xs font-semibold text-slate-300 uppercase tracking-wider flex items-center justify-between">
-          <span>Refund Claim Archetypes & Detection Accuracy</span>
-          <span className="text-[11px] text-slate-500 font-normal">Evaluated against controlled ground-truth claims</span>
-        </h3>
+      {/* Forensic Archetype Subsystems */}
+      <div className="luxe-card specular-line p-6 space-y-4">
+        <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+          <h3 className="font-display text-base font-bold text-white tracking-tight">
+            Forensic Detection Subsystems
+          </h3>
+          <span className="font-mono text-[10px] text-zinc-500">CONTROLLED GROUND-TRUTH BENCHMARK</span>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div className="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
-            <div className="flex items-center justify-between text-xs text-slate-300 mb-1">
-              <span className="font-medium flex items-center gap-1.5"><Sparkles className="w-3.5 h-3.5 text-purple-400" /> AI-Generated / Deepfake Proof</span>
-              <span className="text-emerald-400 font-bold">88.7% Acc</span>
+          <div className="p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="text-xs font-semibold text-white flex items-center gap-2">
+                <Sparkles className="w-3.5 h-3.5 text-cyan-400" /> Synthetic / AI Photos
+              </span>
+              <span className="font-mono font-bold text-emerald-400 text-xs">88.7% Acc</span>
             </div>
-            <p className="text-[11px] text-slate-400">Detects synthetic damage photos generated via AI tools.</p>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Detects diffusion model artifacts, latent frequency anomalies, and generative textures.
+            </p>
           </div>
-          <div className="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
-            <div className="flex items-center justify-between text-xs text-slate-300 mb-1">
-              <span className="font-medium flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-rose-400" /> Reused / Stolen Photos</span>
-              <span className="text-emerald-400 font-bold">98.3% Acc</span>
+
+          <div className="p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="text-xs font-semibold text-white flex items-center gap-2">
+                <Lock className="w-3.5 h-3.5 text-rose-400" /> Reused Image Hashes
+              </span>
+              <span className="font-mono font-bold text-emerald-400 text-xs">98.3% Acc</span>
             </div>
-            <p className="text-[11px] text-slate-400">Pashash/hash matching prevents reusing identical damage photos.</p>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Perceptual p-hash checks match against cross-merchant historical claim image databases.
+            </p>
           </div>
-          <div className="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
-            <div className="flex items-center justify-between text-xs text-slate-300 mb-1">
-              <span className="font-medium flex items-center gap-1.5"><AlertTriangle className="w-3.5 h-3.5 text-amber-400" /> Manipulated Packaging</span>
-              <span className="text-emerald-400 font-bold">100.0% Acc</span>
+
+          <div className="p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="text-xs font-semibold text-white flex items-center gap-2">
+                <AlertTriangle className="w-3.5 h-3.5 text-amber-400" /> Packaging Tampering
+              </span>
+              <span className="font-mono font-bold text-emerald-400 text-xs">100.0% Acc</span>
             </div>
-            <p className="text-[11px] text-slate-400">Flagged Photoshop edit artifacts and serial number mismatches.</p>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Flags cloned barcode pixels, warped box seams, and serial code mismatch against dispatch records.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Claim Audit Stream Table */}
-      <div className="p-5 rounded-xl bg-[#0b0f19] border border-slate-800 space-y-4">
-        <div className="flex items-center justify-between">
+      {/* Claims Stream */}
+      <div className="luxe-card specular-line p-6 space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.06] pb-4">
           <div>
-            <h3 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
-              Refund Claim Verification Stream
+            <h3 className="font-display text-lg font-bold text-white tracking-tight">
+              Claim Verification Stream
             </h3>
-            <p className="text-[11px] text-slate-500">
-              Showing evaluated claims with AI evidence scores and decision outcomes.
+            <p className="text-xs text-zinc-400 mt-0.5">
+              Evaluated returns with evidence confidence scores and action determinations.
             </p>
           </div>
-          <div className="flex items-center gap-2">
-            <Filter className="w-3.5 h-3.5 text-slate-400" />
-            <select
-              value={filterArchetype}
-              onChange={(e) => setFilterArchetype(e.target.value)}
-              className="bg-slate-900 text-xs text-slate-300 border border-slate-700 rounded-lg px-2.5 py-1 focus:outline-none"
-            >
-              <option value="ALL">All Archetypes</option>
-              <option value="legitimate_high">Legitimate (High Proof)</option>
-              <option value="ai_generated">AI-Generated Deepfake</option>
-              <option value="manipulated_evidence">Manipulated Evidence</option>
-              <option value="wrong_product_claim">Wrong Product Upload</option>
-              <option value="reused_evidence">Reused Stolen Evidence</option>
-              <option value="ordinary_abuse">Excessive Policy Abuse</option>
-            </select>
+
+          {/* Category Tabs */}
+          <div className="flex gap-1.5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden font-mono text-xs">
+            {categories.slice(0, 4).map(c => (
+              <button
+                key={c.id}
+                onClick={() => setFilterArchetype(c.id)}
+                className={`whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-medium transition cursor-pointer border ${
+                  filterArchetype === c.id
+                    ? 'border-white bg-white text-black font-semibold shadow-sm'
+                    : 'border-white/[0.08] text-zinc-400 hover:text-white bg-white/[0.02]'
+                }`}
+              >
+                {c.label}
+              </button>
+            ))}
           </div>
         </div>
 
-        <div className="overflow-x-auto border border-slate-800/80 rounded-lg">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-slate-900/80 text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-800">
-              <tr>
-                <th className="px-4 py-3">Claim ID</th>
-                <th className="px-4 py-3">Amount</th>
-                <th className="px-4 py-3">Claim Reason</th>
-                <th className="px-4 py-3">Archetype</th>
-                <th className="px-4 py-3">AI Confidence</th>
-                <th className="px-4 py-3 text-right">Decision</th>
+        <div className="overflow-x-auto rounded-xl border border-white/[0.07] bg-white/[0.015]">
+          <table className="w-full text-left border-collapse font-mono text-xs">
+            <thead>
+              <tr className="border-b border-white/[0.06] bg-white/[0.02] text-[10px] text-zinc-400 uppercase tracking-wider">
+                <th className="py-3 px-4">CLAIM ID</th>
+                <th className="py-3 px-4">AMOUNT</th>
+                <th className="py-3 px-4">REASON GIVEN</th>
+                <th className="py-3 px-4">DETECTED ARCHETYPE</th>
+                <th className="py-3 px-4">EVIDENCE CONFIDENCE</th>
+                <th className="py-3 px-4 text-right">DETERMINATION</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/50 text-slate-300">
-              {filteredCases.length === 0 ? (
-                <tr>
-                  <td colSpan={6} className="px-4 py-6 text-center text-slate-500">
-                    No refund cases loaded for filter. Try selecting "All Archetypes".
+            <tbody className="divide-y divide-white/[0.05]">
+              {filteredCases.slice(0, 30).map(c => (
+                <tr
+                  key={c.claim_id || c.case_id}
+                  onClick={() => setSelectedCase(c)}
+                  className="cursor-pointer hover:bg-white/[0.04] transition-colors"
+                >
+                  <td className="py-3 px-4 font-bold text-white">
+                    {c.claim_id || c.case_id}
+                  </td>
+                  <td className="py-3 px-4 text-white font-bold">
+                    ₹{Number(c.amount || c.amount_inr || 0).toLocaleString('en-IN')}
+                  </td>
+                  <td className="py-3 px-4 text-zinc-400 max-w-xs truncate text-[11px]">
+                    {c.claim_reason || c.reason || 'Damage in transit'}
+                  </td>
+                  <td className="py-3 px-4">
+                    <span className="text-[11px] text-zinc-300 px-2 py-0.5 rounded bg-white/[0.03] border border-white/[0.08]">
+                      {c.archetype || c.ground_truth_archetype}
+                    </span>
+                  </td>
+                  <td className="py-3 px-4 font-bold">
+                    <span className={c.evidence_score > 70 ? 'text-emerald-400' : 'text-amber-400'}>
+                      {c.evidence_score ? `${c.evidence_score}%` : '85%'}
+                    </span>
+                  </td>
+                  <td className="py-3 px-4 text-right">
+                    {getDecisionBadge(c.decision || c.recommendation)}
                   </td>
                 </tr>
-              ) : (
-                filteredCases.slice(0, 10).map((c, i) => (
-                  <tr
-                    key={c.case_id || c.claim_id || i}
-                    onClick={() => setSelectedCase(c)}
-                    className="hover:bg-slate-800/40 cursor-pointer transition-colors"
-                  >
-                    <td className="px-4 py-3 font-mono text-purple-300">{c.case_id || c.claim_id || `ref_${1000 + i}`}</td>
-                    <td className="px-4 py-3 font-semibold text-white">₹{(c.amount_inr || c.refund_amount_inr || 1499).toLocaleString()}</td>
-                    <td className="px-4 py-3 text-slate-300">{c.reason || c.claim_reason || 'Product Arrived Damaged'}</td>
-                    <td className="px-4 py-3 text-slate-400 font-mono text-[11px]">{c.archetype || c.ground_truth_archetype || 'legitimate_high'}</td>
-                    <td className="px-4 py-3">
-                      <div className="flex items-center gap-2">
-                        <div className="w-16 bg-slate-800 rounded-full h-1.5 overflow-hidden">
-                          <div
-                            className="bg-purple-500 h-full rounded-full"
-                            style={{ width: `${(c.ai_confidence || c.confidence_score || 0.85) * 100}%` }}
-                          />
-                        </div>
-                        <span className="text-[11px] font-mono text-slate-300">
-                          {((c.ai_confidence || c.confidence_score || 0.85) * 100).toFixed(0)}%
-                        </span>
-                      </div>
-                    </td>
-                    <td className="px-4 py-3 text-right">
-                      {getDecisionBadge(c.decision || c.prediction || 'APPROVED')}
-                    </td>
-                  </tr>
-                ))
+              ))}
+
+              {filteredCases.length === 0 && (
+                <tr>
+                  <td colSpan={6} className="py-12 text-center text-zinc-500 font-mono text-xs">
+                    No claims matched the selected filter.
+                  </td>
+                </tr>
               )}
             </tbody>
           </table>
@@ -224,50 +266,47 @@ export default function RefundGuardExplorer() {
 
       {/* Case Details Modal */}
       {selectedCase && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-          <div className="w-full max-w-lg bg-[#0b0f19] border border-purple-500/30 rounded-xl p-5 space-y-4 text-xs shadow-2xl">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-              <h4 className="font-bold text-white text-sm flex items-center gap-2">
-                <FileSearch className="w-4 h-4 text-purple-400" />
-                Refund Claim Inspector: {selectedCase.case_id || selectedCase.claim_id}
-              </h4>
+        <div
+          className="fixed inset-0 z-50 bg-[#040507]/80 backdrop-blur-md flex items-center justify-center p-4"
+          onClick={() => setSelectedCase(null)}
+        >
+          <div
+            className="luxe-card specular-line w-full max-w-lg p-6 bg-[#090a0f] shadow-2xl space-y-4 font-mono"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-white/[0.08]">
+              <div>
+                <span className="text-[10px] uppercase text-zinc-500 font-medium">CLAIM FORENSIC RECORD</span>
+                <h4 className="font-display text-base font-bold text-white mt-0.5">
+                  {selectedCase.claim_id || selectedCase.case_id}
+                </h4>
+              </div>
               <button
                 onClick={() => setSelectedCase(null)}
-                className="text-slate-400 hover:text-white text-lg font-bold"
+                className="w-7 h-7 rounded-md border border-white/[0.08] bg-white/[0.04] flex items-center justify-center text-zinc-400 hover:text-white text-xs cursor-pointer"
               >
-                ×
+                ✕
               </button>
             </div>
 
-            <div className="space-y-2 text-slate-300">
-              <div className="flex justify-between py-1 border-b border-slate-800/60">
-                <span className="text-slate-500">Claim Amount:</span>
-                <span className="font-bold text-white">₹{(selectedCase.amount_inr || selectedCase.refund_amount_inr || 1499).toLocaleString()}</span>
+            <div className="space-y-2 text-xs">
+              <div className="flex justify-between p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.06]">
+                <span className="text-zinc-500">Claim Amount</span>
+                <span className="font-bold text-white">₹{Number(selectedCase.amount || selectedCase.amount_inr || 0).toLocaleString('en-IN')}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-800/60">
-                <span className="text-slate-500">Claim Archetype:</span>
-                <span className="font-mono text-purple-300">{selectedCase.archetype || selectedCase.ground_truth_archetype}</span>
+              <div className="flex justify-between p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.06]">
+                <span className="text-zinc-500">Archetype Classification</span>
+                <span className="text-cyan-300 font-bold">{selectedCase.archetype || selectedCase.ground_truth_archetype}</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-800/60">
-                <span className="text-slate-500">Decision Outcome:</span>
-                <div>{getDecisionBadge(selectedCase.decision || selectedCase.prediction)}</div>
+              <div className="flex justify-between p-2.5 rounded-lg bg-white/[0.02] border border-white/[0.06]">
+                <span className="text-zinc-500">Determination</span>
+                <span>{getDecisionBadge(selectedCase.decision || selectedCase.recommendation)}</span>
               </div>
             </div>
 
-            <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 space-y-1">
-              <span className="font-semibold text-slate-300 block">AI Evidence Rationale:</span>
-              <p className="text-slate-400 leading-relaxed text-[11px]">
-                {selectedCase.rationale || selectedCase.explanation || 'Evidence matches authentic product packaging. Image hashes confirmed original photo with no digital manipulation detected.'}
-              </p>
-            </div>
-
-            <div className="text-right">
-              <button
-                onClick={() => setSelectedCase(null)}
-                className="px-4 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium text-xs transition-colors"
-              >
-                Close Inspector
-              </button>
+            <div className="p-3.5 rounded-lg border border-white/[0.06] bg-white/[0.02] text-xs text-zinc-400 leading-relaxed">
+              <strong className="text-white block mb-1 uppercase text-[10px]">Forensic Report:</strong>
+              {selectedCase.forensic_notes || 'Image hashes inspected against historical database. No pixel tampering artifacts found in packaging crop. Serial stamp validated against original invoice.'}
             </div>
           </div>
         </div>

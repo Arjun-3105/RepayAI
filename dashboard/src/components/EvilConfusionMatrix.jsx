@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { animate, stagger } from 'animejs';
-import { ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
-const BRANCHES = ['WAIT','STOP','REAUTHORIZE','ESCALATE','RECOVER'];
+const BRANCHES = ['WAIT', 'STOP', 'REAUTHORIZE', 'ESCALATE', 'RECOVER'];
 
 const META = {
-  RECOVER:     { human:'Retry on Salary Window',   pill:'pill-recover',   dot:'bg-emerald-400' },
-  WAIT:        { human:'Bank Outage Cooldown',      pill:'pill-wait',      dot:'bg-blue-400' },
-  REAUTHORIZE: { human:'Send Re-Auth Link',         pill:'pill-reauth',    dot:'bg-purple-400' },
-  STOP:        { human:'Stop Retries',              pill:'pill-stop',      dot:'bg-rose-400' },
-  ESCALATE:    { human:'Manual Review',             pill:'pill-escalate',  dot:'bg-amber-400' },
+  RECOVER:     { human: 'Salary Retry',   badge: 'luxe-badge-recover' },
+  WAIT:        { human: 'Cooldown',       badge: 'luxe-badge-wait' },
+  REAUTHORIZE: { human: 'Re-Auth Link',   badge: 'luxe-badge-reauth' },
+  STOP:        { human: 'Halt Retries',   badge: 'luxe-badge-stop' },
+  ESCALATE:    { human: 'Risk Review',    badge: 'luxe-badge-escalate' },
 };
 
 export default function EvilConfusionMatrix({ matrixData, branchMetrics, onSelectBranch }) {
@@ -18,7 +18,7 @@ export default function EvilConfusionMatrix({ matrixData, branchMetrics, onSelec
 
   useEffect(() => {
     if (ref.current) {
-      animate('.cm-cell', { opacity: [0, 1], scale: [0.88, 1], delay: stagger(22), ease: 'outQuad' });
+      animate('.cm-cell', { opacity: [0, 1], scale: [0.96, 1], delay: stagger(15), ease: 'outQuad' });
     }
   }, [matrixData]);
 
@@ -27,65 +27,73 @@ export default function EvilConfusionMatrix({ matrixData, branchMetrics, onSelec
   const total = BRANCHES.reduce((s, b) => s + (matrixData[b]?.[b] || 0), 0);
 
   return (
-    <div ref={ref} className="card p-5 flex flex-col gap-4 card-glow-blue">
+    <div ref={ref} className="luxe-card specular-line p-6 flex flex-col gap-5">
       {/* Header */}
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-4 border-b border-white/[0.06]">
         <div>
-          <div className="flex items-center gap-2 mb-1">
-            <ShieldCheck size={15} className="text-cyan-400" />
-            <h3 className="text-[13px] font-bold text-white">AI Decision Accuracy Matrix</h3>
-            <span className="chip chip-info text-[10px]">98.33%</span>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+            <span className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest font-medium">
+              BENCHMARK // DECISION MATRIX
+            </span>
           </div>
-          <p className="text-[11px] text-slate-400 leading-relaxed">
-            Predicted branch vs ground-truth archetype. Diagonal = correct. Off-diagonal = mismatch.
+          <h3 className="font-display text-xl font-bold tracking-tight text-white mt-1">
+            Classification Accuracy Matrix
+          </h3>
+          <p className="text-xs text-zinc-400 mt-1">
+            Predictions evaluated against controlled ground-truth test labels. Diagonal = matches.
           </p>
-          <div className="mt-2 flex items-start gap-1.5 px-2.5 py-2 rounded-lg bg-purple-500/[0.06] border border-purple-500/[0.15]">
-            <span className="text-purple-400 text-[10px] font-black uppercase tracking-wider shrink-0 mt-0.5">PROOF:</span>
-            <p className="text-[10px] text-purple-200 leading-snug">
-              98.3% diagonal — computed against <b>controlled ground-truth labels</b> the
-              classifier never saw. Not self-reported. Each off-diagonal cell is a named,
-              traceable misclassification.
-            </p>
-          </div>
         </div>
-        <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-emerald-500/12 border border-emerald-500/25 text-emerald-300 text-[11px] font-semibold shrink-0">
-          <CheckCircle2 size={12} /> {total} / 300
+
+        <div className="flex items-center gap-2 font-mono text-xs">
+          <div className="px-3 py-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] text-zinc-300 flex items-center gap-2 shadow-sm">
+            <CheckCircle2 size={13} className="text-emerald-400" />
+            <span className="text-white font-bold">{total} / 300</span>
+            <span className="text-zinc-600">·</span>
+            <span className="text-emerald-400 font-bold">98.33% Precision</span>
+          </div>
         </div>
       </div>
 
-      {/* Branch legend legend */}
-      <div className="grid grid-cols-5 gap-1.5">
+      {/* Filter Badges */}
+      <div className="flex flex-wrap gap-2">
         {BRANCHES.map(b => (
-          <button key={b} onClick={() => onSelectBranch?.(b)}
-            className={`px-2 py-1.5 rounded-lg border text-[10px] font-bold cursor-pointer transition-all hover:scale-105 ${META[b].pill}`}>
-            {META[b].human}
+          <button
+            key={b}
+            onClick={() => onSelectBranch?.(b)}
+            className={`luxe-badge ${META[b].badge} cursor-pointer transition-all hover:border-white/40 active:scale-95`}
+          >
+            {b} · {META[b].human}
           </button>
         ))}
       </div>
 
-      {/* Matrix grid */}
+      {/* Matrix Table */}
       <div className="overflow-x-auto">
-        <div style={{ minWidth: 440 }}>
-          {/* Column headers */}
-          <div className="grid gap-1" style={{ gridTemplateColumns: '88px repeat(5, 1fr)' }}>
-            <div className="text-[9px] text-slate-500 uppercase tracking-wider self-end pb-1 font-semibold">
-              Pred ↓ / True →
+        <div style={{ minWidth: 420 }}>
+          {/* Column Header */}
+          <div className="grid gap-1.5 font-mono text-[10px]" style={{ gridTemplateColumns: '88px repeat(5, 1fr)' }}>
+            <div className="text-zinc-500 uppercase pb-1 tracking-wider">
+              Pred ↓ True →
             </div>
             {BRANCHES.map(b => (
-              <div key={b} className="py-1.5 px-1 rounded-md bg-white/[0.04] border border-white/[0.07] text-[9px] font-bold text-slate-300 text-center uppercase tracking-wider">
-                {b}
+              <div
+                key={b}
+                className="py-1 px-1 rounded-md border border-white/[0.06] bg-white/[0.02] text-zinc-400 text-center font-bold uppercase truncate"
+              >
+                {b.slice(0, 4)}
               </div>
             ))}
           </div>
 
           {/* Rows */}
-          <div className="space-y-1 mt-1">
+          <div className="space-y-1.5 mt-1.5 font-mono">
             {BRANCHES.map(row => (
-              <div key={row} className="grid gap-1" style={{ gridTemplateColumns: '88px repeat(5, 1fr)' }}>
-                {/* Row label */}
-                <div className={`py-2 px-2 rounded-lg border ${META[row].pill} flex flex-col justify-center`}>
-                  <span className="text-[9px] font-black uppercase">{row}</span>
-                  <span className="text-[9px] opacity-80 font-normal leading-none mt-0.5">{META[row].human}</span>
+              <div key={row} className="grid gap-1.5" style={{ gridTemplateColumns: '88px repeat(5, 1fr)' }}>
+                {/* Row Label */}
+                <div className={`p-2 rounded-lg border ${META[row].badge} flex flex-col justify-center`}>
+                  <span className="text-[10px] font-bold">{row.slice(0, 6)}</span>
+                  <span className="text-[8px] opacity-75 truncate">{META[row].human}</span>
                 </div>
 
                 {/* Cells */}
@@ -95,21 +103,27 @@ export default function EvilConfusionMatrix({ matrixData, branchMetrics, onSelec
                   const isHot = !isDiag && count > 0;
                   const isSel = selected?.row === row && selected?.col === col;
 
-                  let bg = 'bg-white/[0.02] border-white/[0.05] text-slate-600';
+                  let cellStyle = 'bg-white/[0.02] border-white/[0.06] text-zinc-600';
                   if (isDiag && count > 0) {
-                    const map = { RECOVER:'bg-emerald-500/20 border-emerald-500/35 text-emerald-300', WAIT:'bg-blue-500/20 border-blue-500/35 text-blue-300', REAUTHORIZE:'bg-purple-500/20 border-purple-500/35 text-purple-300', STOP:'bg-rose-500/20 border-rose-500/35 text-rose-300', ESCALATE:'bg-amber-500/20 border-amber-500/35 text-amber-300' };
-                    bg = map[row];
+                    cellStyle = 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300 font-bold';
                   } else if (isHot) {
-                    bg = 'bg-rose-500/20 border-rose-500/50 text-rose-300';
+                    cellStyle = 'bg-rose-500/10 border-rose-500/30 text-rose-300 font-bold';
                   }
 
                   return (
-                    <div key={col}
-                      onClick={() => { setSelected({ row, col, count }); onSelectBranch?.(row); }}
-                      className={`cm-cell border rounded-xl flex flex-col items-center justify-center min-h-[52px] cursor-pointer transition-all hover:scale-105 ${bg} ${isSel ? 'ring-2 ring-cyan-400 ring-offset-1 ring-offset-[#06080f]' : ''}`}>
-                      <span className="text-base font-black font-mono leading-none">{count}</span>
-                      <span className="text-[8px] uppercase font-semibold opacity-75 mt-0.5">
-                        {isDiag ? 'match' : count > 0 ? 'miss' : ''}
+                    <div
+                      key={col}
+                      onClick={() => {
+                        setSelected({ row, col, count });
+                        onSelectBranch?.(row);
+                      }}
+                      className={`cm-cell border rounded-lg flex flex-col items-center justify-center min-h-[48px] cursor-pointer transition-all hover:border-white/30 ${cellStyle} ${
+                        isSel ? 'ring-1 ring-white' : ''
+                      }`}
+                    >
+                      <span className="text-sm font-bold leading-none">{count}</span>
+                      <span className="text-[8px] uppercase opacity-75 mt-0.5">
+                        {isDiag ? 'HIT' : count > 0 ? 'MISS' : '—'}
                       </span>
                     </div>
                   );
@@ -122,32 +136,34 @@ export default function EvilConfusionMatrix({ matrixData, branchMetrics, onSelec
 
       {/* Per-branch F1 scores */}
       {branchMetrics && (
-        <div className="grid grid-cols-5 gap-2 pt-3 border-t border-white/[0.07]">
+        <div className="grid grid-cols-5 gap-2.5 pt-4 border-t border-white/[0.06] font-mono">
           {BRANCHES.map(b => {
             const m = branchMetrics[b];
             const f1pct = m ? Math.round(m.f1 * 100) : 0;
-            const colors = { RECOVER:'from-emerald-500', WAIT:'from-blue-500', REAUTHORIZE:'from-purple-500', STOP:'from-rose-500', ESCALATE:'from-amber-500' };
             return (
-              <div key={b} className="text-center">
-                <div className="text-[11px] text-slate-400 font-medium mb-1">{b.slice(0,4)}..</div>
-                <div className="progress-track mb-1">
-                  <div className={`progress-fill bg-gradient-to-r ${colors[b]} to-transparent`} style={{ width: `${f1pct}%` }} />
+              <div key={b} className="text-center p-2.5 rounded-lg border border-white/[0.06] bg-white/[0.02]">
+                <div className="text-[10px] text-zinc-400 uppercase mb-1.5 truncate">{b}</div>
+                <div className="h-1 bg-white/[0.08] rounded-full overflow-hidden mb-1.5">
+                  <div
+                    className="h-full bg-white transition-all duration-300"
+                    style={{ width: `${f1pct}%` }}
+                  />
                 </div>
-                <div className="text-[11px] font-bold font-mono text-white">{f1pct}%</div>
-                <div className="text-[9px] text-slate-500">F1</div>
+                <div className="text-xs font-bold text-white">{f1pct}%</div>
+                <div className="text-[9px] text-zinc-500">F1 SCORE</div>
               </div>
             );
           })}
         </div>
       )}
 
-      {/* Selected cell callout */}
+      {/* Selected Cell Detail */}
       {selected && (
-        <div className="flex items-center justify-between p-2.5 rounded-xl bg-white/[0.04] border border-cyan-500/25 text-[11px]">
-          <span className="text-slate-300">
-            <b className="text-cyan-400">{selected.row}</b> predicted for true-label <b className="text-purple-400">{selected.col}</b>
+        <div className="flex items-center justify-between p-2.5 rounded-lg border border-white/[0.08] bg-white/[0.03] font-mono text-xs">
+          <span className="text-zinc-400">
+            Predicted <strong className="text-white">{selected.row}</strong> / True <strong className="text-cyan-300">{selected.col}</strong>
           </span>
-          <span className="font-mono font-bold text-white">{selected.count} events</span>
+          <span className="font-bold text-white">{selected.count} EVENTS</span>
         </div>
       )}
     </div>

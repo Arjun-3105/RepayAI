@@ -92,29 +92,34 @@ def _call_openrouter(
     model: str = "anthropic/claude-3-haiku",
 ) -> Optional[str]:
     try:
-        import requests
+        import requests, time
         prompt = _build_prompt(event, branch, rule_rationale)
-        response = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://github.com/recoverability-engine",
-                "X-Title": "Recoverability Engine",
-            },
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 180,
-                "temperature": 0.3,
-            },
-            timeout=15,
-        )
-        if response.status_code == 200:
-            data = response.json()
-            return data["choices"][0]["message"]["content"].strip()
-        else:
-            return None
+        for attempt in range(3):
+            response = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/recoverability-engine",
+                    "X-Title": "Recoverability Engine",
+                },
+                json={
+                    "model": model,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 180,
+                    "temperature": 0.3,
+                },
+                timeout=15,
+            )
+            if response.status_code == 200:
+                data = response.json()
+                return data["choices"][0]["message"]["content"].strip()
+            elif response.status_code == 429:
+                time.sleep(2.5 * (attempt + 1))
+                continue
+            else:
+                return None
+        return None
     except Exception:
         return None
 
